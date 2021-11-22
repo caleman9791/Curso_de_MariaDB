@@ -1,0 +1,26 @@
+Introducción a DBMS
+
+
+DBMS son las siglas de Database Management System. Podemos romperlo así DBMS = Base de datos + Sistema de gestión. La base de datos es una colección de datos y el sistema de gestión es un conjunto de programas para almacenar y recuperar esos datos. Basándonos en esto, podemos definir DBMS así: DBMS es una colección de datos interrelacionados y un conjunto de programas para almacenar * acceder a esos datos de una manera fácil y efectiva.
+
+¿Cuál es la necesidad de DBMS?
+
+Los sistemas de bases de datos se desarrollan básicamente para una gran cantidad de datos. Cuando se trata de una gran cantidad de datos, hay dos cosas que requieren optimización: el almacenamiento de datos y la recuperación de datos.
+
+Almacenamiento: De acuerdo con los principios de los sistemas de bases de datos, los datos se almacenan de tal manera que adquieren mucho menos espacio ya que los datos redundantes (datos duplicados) se han eliminado antes del almacenamiento. Tomemos un ejemplo de un profano para entender esto:
+En un sistema bancario, suponga que un cliente tiene dos cuentas, una cuenta de ahorro y otra cuenta de salario. Digamos que el banco almacena los datos de la cuenta de ahorro en un lugar (estos lugares se denominan tablas, los conoceremos más adelante) y los datos de la cuenta de salario en otro lugar, en ese caso, si la información del cliente, como el nombre del cliente, la dirección, etc., se almacenan en ambos lugares. entonces esto es solo un desperdicio de almacenamiento (redundancia / duplicación de datos), para organizar los datos de una mejor manera, la información debe almacenarse en un solo lugar y ambas cuentas deben estar vinculadas a esa información de alguna manera. Lo mismo logramos en DBMS.
+
+Recuperación rápida de datos: además de almacenar los datos de manera optimizada y sistemática, también es importante que recuperemos los datos rápidamente cuando sea necesario. Los sistemas de bases de datos garantizan que los datos se recuperen lo más rápido posible.
+
+Propósito de los sistemas de bases de datos
+El objetivo principal de los sistemas de bases de datos es gestionar los datos. Considere una universidad que guarda los datos de estudiantes, profesores, cursos, libros, etc. Para administrar estos datos, necesitamos almacenar estos datos en algún lugar donde podamos agregar nuevos datos, eliminar datos no utilizados, actualizar datos obsoletos, recuperar datos, para realizar estas operaciones sobre los datos necesitamos un sistema de gestión de base de datos que nos permita almacenar los datos de tal manera que todas estas operaciones se puedan realizar en los datos de manera eficiente.
+
+Los sistemas de bases de datos son mucho mejores que los sistemas de procesamiento de archivos tradicionales que hemos discutido en el artículo separado: DBMS vs File System.
+
+
+
+En informática, una base de datos es una colección organizada de datos almacenados y a los que se accede electrónicamente desde un sistema informático. Cuando las bases de datos son más complejas, a menudo se desarrollan utilizando técnicas formales de diseño y modelado.
+
+El sistema de gestión de bases de datos (DBMS) es el software que interactúa con los usuarios finales, las aplicaciones y la propia base de datos para capturar y analizar los datos. El software DBMS también incluye las instalaciones principales proporcionadas para administrar la base de datos. La suma total de la base de datos, el DBMS y las aplicaciones asociadas puede denominarse 'sistema de base de datos'. A menudo, el término 'base de datos' también se usa para referirse libremente a cualquiera de los DBMS, el sistema de base de datos o una aplicación asociada con la base de datos.
+
+Los informáticos pueden clasificar los sistemas de gestión de bases de datos de acuerdo con los modelos de base de datos que admiten. Las bases de datos relacionales se volvieron dominantes en la década de 1980. Estos modelan datos como filas y columnas en una serie de tablas, y la gran mayoría usa SQL para escribir y consultar datos. En la década de 2000, las bases de datos no relacionales se hicieron populares, conocidas como NoSQL porque utilizan diferentes lenguajes de consulta.

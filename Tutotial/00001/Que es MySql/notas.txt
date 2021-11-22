@@ -1,0 +1,68 @@
+¿Que es MySql?
+
+MySQL es un sistema de administración de bases de datos que le permite administrar bases de datos relacionales. Es un software de código abierto respaldado por Oracle. Significa que puede usar MySQL sin pagar un centavo. Además, si lo desea, puede cambiar su código fuente para adaptarlo a sus necesidades.
+
+La forma oficial de pronunciar MySQL es My Ess Que Ell, no My Sequel. Sin embargo, puedes pronunciarlo como quieras, ¿a quién le importa?
+
+Ahora explicaremos que es la especificación SQL 
+
+SQL 'sequel' Structured Query Language es un lenguaje específico de dominio usado en programación y diseñado para administrar datos almacenados en un sistema de administración de bases de datos relacionales (RDBMS), o para el procesamiento de flujos en un sistema de gestión de flujos de datos relacionales (RDSMS). Es particularmente útil en el manejo de datos estructurados, es decir,datos que incorporan relaciones entre entidades y variables.
+
+SQL fue adoptado como estándar por la ANSI en 1986 como SQL-86 y la ISO en 1987. Es mantenido por ISO / IEC JTC 1, Tecnología de la información, Subcomité SC 32, Gestión e intercambio de datos.
+
+Hasta 1996, el programa de estándares de gestión de datos del Instituto Nacional de Estándares y Tecnología (NIST) certificaba el cumplimiento de SQL DBMS con el estándar SQL. Los proveedores ahora autocertifican la conformidad de sus productos.
+
+
+SQL implica el proceso de solicitar los datos de una base de datos almacenada en tablas. Lo que un usuario envía a DBMS es una consulta de base de datos escrita siguiendo la sintaxis y las reglas del lenguaje de consulta estructurado.
+
+SQL es el lenguaje de consulta utilizado para consultar datos en todos los RDBMS.
+SQL no es un lenguaje de programación y no es necesario compilarlo. Es un lenguaje no procedimental.
+
+Un programador o desarrollador no necesita escribir programas como en C / C ++, Java, etc. Es como plantear preguntas al DBMS que busca las filas de datos requeridas que coinciden con los criterios de la base de datos.
+
+Sub-lenguajes de lenguaje de consulta estructurado
+SQL está dividido en cuatro sub lenguajes
+
+DDL (lenguaje de definición de datos)
+	CREATE: para crear objetos de base de datos como tablas, vistas, procedimientos, funciones, disparadores, usuarios, roles, etc.
+	ALTER: para alterar o modificar definiciones de objetos de base de datos existentes
+	DROP: para la eliminación permanente de objetos de base de datos existentes
+	TRUNCATE- para eliminar los datos de la tabla conservando su estructura
+
+DML (lenguaje de manipulación de datos)
+	INSERT: para insertar o agregar nuevas filas en una tabla
+	UPDATE: para actualizar las filas de datos almacenadas en tablas
+	DELETE- para eliminar las filas de datos de las tablas
+	SELECT- para obtener los datos de la (s) tabla (s)
+
+
+DCL (lenguaje de control de datos)
+	GRANT: para permitir que un usuario o un rol acceda a privilegios sobre objetos de base de datos
+	REVOKE: para revocar los privilegios de acceso asignados previamente a un usuario o un rol
+	COMMENT: para agregar comentarios al diccionario de datos
+
+TCL (lenguaje de control de transacciones)
+	COMMIT: para guardar los cambios en la base de datos realizados después de los comandos INSERT, UPDATE y DELETE
+	ROLLBACK- para borrar los cambios en la base de datos incurridos después de los comandos INSERT, UPDATE y DELETE
+	SAVEPOINT: para establecer un marcador o un punto en una transacción para que, en caso de inconsistencia, se pueda usar ROLLBACK para borrar los cambios realizados después de este punto.
+	SET TRANSACTION: cambie las opciones de transacción generalmente para revertir a un segmento. 
+
+
+
+
+Referencias 
+
+https://www.mysqltutorial.org/what-is-mysql/
+
+https://en.wikipedia.org/wiki/SQL#Standardization_history
+
+https://en.wikipedia.org/wiki/National_Institute_of_Standards_and_Technology
+
+https://en.wikipedia.org/wiki/ISO/IEC_JTC_1/SC_32
+
+https://www.tutorialspoint.com/mysql/mysql-introduction.htm
+
+https://www.tutorialspoint.com/sql/sql-overview.htm
+
+https://csveda.com/structured-query-language/
+

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8"/>
+      <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+      <title>
+         Document
+      </title>
+   </head>
+   <body>
+      <div class="" style="width: 100%;">
+         <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"/>
+         <div class="w3-container">
+            <p>
+               En esta entrada comprenderemos, bajo que licencia se puede distribuir y/o acceder a los productos MySql y de paso hablaremos de MariaDB para aclarar conceptos de licencia, y del  porqué en algunos sitios de la Internet, suelen decir que es gratis la base de datos MySQL. Esta entrada surge a raíz de un comentario de una persona muy apreciada lo cual lee mis escritos y presenta críticas constructivas. Exactamente en mi publicación anterior declaro que MySQL era gratuito, más adelante les dejo una cita, que hace referencia dicha entrada.
+            </p>
+            <p>
+               MySQL para empresas no es gratuito y los detalles de estas se encuentran en su página oficial. A continuación leemos sobre lo que nos tiene que decir acerca de las licencias, dado el caso de que "Oracle" obtuvo los derechos de MySQL, estos cambios se han ido incorporando poco a poco, de hecho con en el lenguaje Java está sucediendo algo similar. No digo que MySQL es un lenguaje, sino que, realizo una comparación referente a las licencias y sus cambios  por la adquisición de estos,  ya que hablamos de licencias en esta ocasión. Aquí la referencia a la sección de mi argumento en la entrada anterior.
+            </p>
+            <blockquote class="w3-tiny">
+               <div class="cita w3-panel w3-light-grey w3-padding">
+                  "MySQL es un sistema de administración de bases de datos que le permite administrar bases de datos relacionales. Es un software de código abierto respaldado por Oracle. Significa que puede usar MySQL sin pagar un centavo. Además, si lo desea, puede cambiar su código fuente para adaptarlo a sus necesidades."
+               </div>
+            </blockquote>
+            <p>
+               Ya tenemos esta parte clara, entonces podemos comprender, que está sucediendo con las  licencias y porque son comerciales y a su vez partes de estas son permisibles solo bajo la licencia GPL, de hecho todo desarrollador deberá retirar la antigua excepción "FOSS" lo cual permitía publicar bajo otras licencias no compatibles con la "Licencia GPL"
+            </p>
+            <p>
+               Por otro lado comprendamos lo que significan: Los ISV lo cual son "proveedores de software independientes" Los OEM que son el "fabricante de equipos originales" y los VAR que son el "revendedor de valor agregado.
+            </p>
+            <div class="">
+               <p>
+                  Veamos una sección importante publicada, en la página oficial de MySQL:
+               </p>
+            </div>
+            <blockquote class="w3-tiny">
+               <div class="cita w3-panel w3-light-grey ww3-padding">
+                  <p>
+                     MySQL :: Commercial License for OEMs, ISVs and VARs. (n.d.). Mysql. Retrieved June 20, 2021, from https://www.mysql.com/about/legal/licensing/oem/Licencia comercial de MySQL para OEM, ISV y VAR
+                  </p>
+                  <p>
+                     Oracle proporciona su servidor de base de datos MySQL y bibliotecas cliente MySQL bajo un modelo de licencia dual diseñado para satisfacer las necesidades de desarrollo y distribución de distribuidores comerciales (como OEM, ISV y VAR) y proyectos de código abierto.
+                  </p>
+                  <p>
+                     Para OEM, ISV, VAR y otros distribuidores de aplicaciones comerciales:
+                  </p>
+                  <p>
+                     OEM (fabricantes de equipos originales), ISV (proveedores de software independientes), VAR (revendedores de valor agregado) y otros distribuidores que combinan y distribuyen software con licencia comercial con software MySQL y no desean distribuir el código fuente del software con licencia comercial en la versión 2 De la Licencia Pública General GNU (la 'GPL') debe celebrar un contrato de licencia comercial con Oracle.
+                  </p>
+                  <p>
+                     Para proyectos de código abierto y otros desarrolladores de aplicaciones de código abierto:
+                  </p>
+                  <p>
+                     Para los desarrolladores de aplicaciones de software libre de código abierto ('FOSS') bajo la GPL que desean combinar y distribuir esas aplicaciones FOSS con el software MySQL, el software de código abierto MySQL de Oracle con licencia de la GPL es la mejor opción.
+                  </p>
+                  <p>
+                     Para los desarrolladores y distribuidores de software de código abierto con una licencia de FOSS distinta de la GPL, Oracle pone a disposición sus bibliotecas cliente MySQL con licencia GPL bajo una excepción de FOSS que permite el uso de esas bibliotecas cliente MySQL en determinadas condiciones sin que todo el trabajo derivado se pierda. Estar sujeto a la GPL.
+                  </p>
+               </div>
+            </blockquote>
+            También tenemos disponible la lectura del Manual de referencia de MySQL 5.7  https://docs.oracle.com/cd/E17952_01/mysql-5.7-en/index.html
+            <p>
+               Si leeemos  la definicion de mysql  por oracle aqui https://docs.oracle.com/cd/E17952_01/mysql-5.7-en/what-is-mysql.html leeremos en una seccion lo siguente
+            </p>
+            <blockquote class="w3-tiny">
+               <div class="cita w3-panel w3-light-grey ww3-padding">
+                  <p>
+                     El software MySQL es de código abierto.
+                  </p>
+                  <p>
+                     Código abierto significa que cualquiera puede utilizar y modificar el software. Cualquiera puede descargar el software MySQL de Internet y utilizarlo sin pagar nada. Si lo desea, puede estudiar el código fuente y modificarlo para adaptarlo a sus necesidades. El software MySQL utiliza la GPL (Licencia Pública General GNU), http://www.fsf.org/licenses/, para definir lo que puede y no puede hacer con el software en diferentes situaciones. Si no se siente cómodo con la GPL o necesita incrustar código MySQL en una aplicación comercial, puede comprarnos una versión con licencia comercial. Consulte la descripción general de licencias de MySQL para obtener más información (http://www.mysql.com/company/legal/licensing/).
+                  </p>
+               </div>
+            </blockquote>
+            <p>
+               En esta descripción proporcionada por MySQL, observamos los reclamos de remoción de todas las licencias que permitía la excepción FOSS de todo el software derivado de los ficheros binarios de MySQL, por ende, sus librerías, controladores y componentes. Sin embargo tenemos la fundación MariaDB de la cual hablaré más adelante. Le recuerdo que mi postura sobre las licencias,  está influenciado por mi creencia de la posibilidad de acceder a herramientas bajo la licencia GPL, ya que nos brinda la oportunidad a  personas con menos recursos económicos, a producir software competente y ser parte del crecimiento tecnológico de esta nueva era,  y no solo eso, sino a la posibilidad de que más personas puedan aportar al desarrollo de estas herramientas.
+            </p>
+            <p>
+               Relacionado con esto voy a hablar de herramientas que yo empleo en mi trabajo como desarrollador de aplicaciones web. Existen muchas  herramientas de desarrollo de aplicaciones mucho mejores o mucho peores no lo sé, solo sé que yo trabajo con mis herramientas y logro satisfacer cualquier necesidad informática de una organización, utilizando las mismas.
+            </p>
+            <p>
+               Comencemos hablando de PhpMyAdmin, este se puede considerar un producto que depende de un motor de base de datos pues este solo es una interfaz que se comunica con el motor de bases de datos. Por si no lo sabías podemos acceder al motor de base de datos de MySQL, solo empleando una terminal de línea de comando. Cuando instalé él (Bundle "Paquete") para desarrollar  aplicaciones, lo cual ejecuto de manera local, previamente al despliegue de las mismas en servidores, que usan las mismas tecnologías. Continuamos, entonces tengo una serie de herramientas en el paquete de desarrollo local, y una de ellas, es PhpMyAdmin, lo cual posee una serie de propiedades, que mencionaré a continuación.
+            </p>
+            <blockquote class="w3-tiny">
+               <div class="cita w3-panel w3-light-grey ww3-padding">
+                  <p>
+                     Servidor de base de datos
+                  </p>
+                  <p>
+                     Servidor: Localhost via UNIX socket
+                  </p>
+                  <p>
+                     Tipo de servidor: MariaDB
+                  </p>
+                  <p>
+                     Conexión del servidor: No se está utilizando SSL Documentación
+                  </p>
+                  <p>
+                     Versión del servidor: 10.4.19-MariaDB - Source distribution
+                  </p>
+                  <p>
+                     Versión del protocolo: 10
+                  </p>
+                  <p>
+                     Usuario: root@localhost
+                  </p>
+                  <p>
+                     Conjunto de caracteres del servidor: UTF-8 Unicode (utf8mb4)
+                  </p>
+                  <p>
+                     Servidor web
+                  </p>
+                  <p>
+                     Apache/2.4.48 (Unix) OpenSSL/1.1.1k PHP/7.4.20 mod_perl/2.0.11 Perl/v5.32.1
+                  </p>
+                  <p>
+                     Versión del cliente de base de datos: libmysql - mysqlnd 7.4.20
+                  </p>
+                  <p>
+                     extensión PHP: mysqli Documentación curl Documentación mbstring Documentación
+                  </p>
+                  <p>
+                     Versión de PHP: 7.4.20
+                  </p>
+               </div>
+            </blockquote>
+            <p>
+               Ahora observamos que posee una  sección "Versión del servidor lo cual es MariaDB y otra,  llamada versión del cliente de base de datos". Entonces que es "libmysql - mysqlnd 7.4.20". Pues en https://dev.mysql.com/downloads/connector/php-mysqlnd/, nos dice que: "El controlador nativo de MySQL para PHP (mysqlnd) es un reemplazo directo de la biblioteca cliente de MySQL (libmysql) para el lenguaje de script PHP." Ademas nos dice que "Las 3 extensiones PHP MySQL y la biblioteca mysqlnd son parte del código fuente de PHP. El código fuente y los binarios están disponibles."
+            </p>
+            <p>
+               Puede que todo esto, provoque dificultad de comprensión, a usuarios con poca experiencia en el campo,  por lo que intentaré simplificar los conceptos y así proporcionar una idea clara del panorama.
+            </p>
+            <p>
+               Puede leer más sobre PhpMyadmin aquí https://www.phpmyadmin.net/.
+            </p>
+            <p>
+               "PhpMyAdmin es una herramienta de software gratuita escrita en PHP, destinada a manejar la administración de MySQL a través de la Web. phpMyAdmin admite una amplia gama de operaciones en MySQL y MariaDB. Las operaciones de uso frecuente (administración de bases de datos, tablas, columnas, relaciones, índices, usuarios, permisos, etc.) se pueden realizar a través de la interfaz de usuario, mientras aún tiene la capacidad de ejecutar directamente cualquier declaración SQL."
+            </p>
+            <p>
+               Por lo que le adelanto que, XAMPP posee lo necesario para el desarrollo de aplicaciones web, ya que  proporciona un entorno local de pruebas, al menos todo lo necesario, para mi entorno de trabajo, lo cual es MySQL, PHP, JavaScript, CSS y HTML.
+            </p>
+            <p>
+               Por otro lado veamos las propiedades del paquete XAMPP, lo cual nos dice, que incluye los siguientes paquetes, servicios, componentes y/o extensiones. A continuación el listado.
+            </p>
+            <blockquote class="w3-tiny">
+               <div class="cita w3-panel w3-light-grey ww3-padding">
+                  <p>
+                     Includes: Apache 2.4.48, MariaDB 10.4.19, PHP 7.4.20 + SQLite 2.8.17/3.35.5 + multibyte (mbstring) support, Perl 5.32.1, ProFTPD 1.3.6, phpMyAdmin 5.1.1, OpenSSL 1.1.1k, GD 2.2.5, Freetype2 2.4.8, libpng 1.6.37, gdbm 1.8.3, zlib 1.2.11, expat 2.0.1, Sablotron 1.0.3, libxml 2.0.1, Ming 0.4.5, Webalizer 2.23-05, pdf class 0.11.7, ncurses 5.9, pdf class 0.11.7, mod_perl 2.0.11, FreeTDS 0.91, gettext 0.19.8.1, IMAP C-Client 2007e, OpenLDAP (client) 2.4.48, mcrypt 2.5.8, mhash 0.9.9.9, cUrl 7.53.1, libxslt 1.1.33, libapreq 2.13, FPDF 1.7, ICU4C Library 66.1, APR 1.5.2, APR-utils 1.5.4
+                  </p>
+               </div>
+            </blockquote>
+            <p>
+               Observamos que en el listado se encuentra, PhpMyadmin y MariaDB, si recordamos la lectura de PhpMyadmin nos dice que puede manejar MySQL y MariaDB.
+            </p>
+            <p>
+               Veamos, lo que tiene que decir, la página de tutoriales, llamada mariadbtutorial aquí https://www.mariadbtutorial.com/getting-started/what-is-mariadb/
+            </p>
+            <blockquote class="cita w3-tiny">
+               <div class="cita w3-panel w3-light-grey ww3-padding">
+                  <p>
+                     Que es MariaDB?
+                  </p>
+                  <p>
+                     MariaDB es una bifurcación de MySQL. En otras palabras, es un reemplazo directo mejorado de MySQL.
+                  </p>
+                  <p>
+                     Un reemplazo directo significa que puede sustituir el servidor MySQL estándar con la versión analógica del servidor MariaDB y aprovechar al máximo las mejoras en MariaDB sin la necesidad de modificar el código de su aplicación.
+                  </p>
+                  <p>
+                     MariaDB es rápido, escalable y robusto. Es compatible con más motores de almacenamiento que MySQL. MariaDB también incluye muchos complementos y herramientas que lo hacen versátil para muchos casos de uso.
+                  </p>
+               </div>
+            </blockquote>
+            <p>
+               Que dice oracle de MySql en https://docs.oracle.com/cd/E17952_01/mysql-5.7-en/what-is-mysql.html
+            </p>
+            <blockquote class="w3-tiny">
+               <div class="cita w3-panel w3-light-grey w3-padding">
+                  <p>
+                     El software MySQL es de código abierto.
+                  </p>
+                  <p>
+                     Código abierto significa que cualquiera puede utilizar y modificar el software. Cualquiera puede descargar el software MySQL de Internet y utilizarlo sin pagar nada. Si lo desea, puede estudiar el código fuente y modificarlo para adaptarlo a sus necesidades. El software MySQL utiliza la GPL (Licencia Pública General GNU), http://www.fsf.org/licenses/, para definir lo que puede y no puede hacer con el software en diferentes situaciones. Si no se siente cómodo con la GPL o necesita incrustar código MySQL en una aplicación comercial, puede comprarnos una versión con licencia comercial. Consulte la descripción general de licencias de MySQL para obtener más información (http://www.mysql.com/company/legal/licensing/).
+                  </p>
+               </div>
+            </blockquote>
+            <p>
+               Perfecto haora mas cosas, segun la lectura anterior vemos que oracle se refiera un motor de base de datos llmado "NDB Cluster"  y dice y6nos da una definicion.
+            </p>
+            <blockquote class="w3-tiny">
+               <div class="cita w3-panel w3-light-grey w3--padding">
+                  <p>
+                     NDB Cluster es el sistema de base de datos distribuido subyacente a MySQL Cluster. Se puede utilizar independientemente de un servidor MySQL con usuarios que acceden al clúster a través de la API de NDB (C ++). 'NDB' son las siglas de Network Database.
+                  </p>
+               </div>
+            </blockquote>
+            <p>
+               Aqui un listado demotores de bases de datos publicado en https://wiki.cifprodolfoucha.es/index.php?title=Mysql_Motores_de_bases_de_datos
+            </p>
+            <blockquote class="w3-tiny">
+               <div class="cita w3-panel w3-light-grey w3-tpadding">
+                  <p>
+                     MYISAM Storage Engine
+                  </p>
+                  <p>
+                     MEMORY Storage Engine
+                  </p>
+                  <p>
+                     CSV Storage Engine
+                  </p>
+                  <p>
+                     ARCHIVE Storage Engine
+                  </p>
+                  <p>
+                     BLACKHOLE Storage Engine
+                  </p>
+                  <p>
+                     MERGE Storage Engine
+                  </p>
+                  <p>
+                     FEDERATED Storage Engine
+                  </p>
+                  <p>
+                     EXAMPLE Storage Engine
+                  </p>
+                  <p>
+                     INNODB Storage Engine
+                  </p>
+                  <p>
+                     NDB Storage Engine
+                  </p>
+               </div>
+            </blockquote>
+            <p>
+               Según un artículo del Wikipedia
+            </p>
+            <blockquote class="w3-tiny">
+               <div class="cita w3-panel w3-light-grey w3-teadding">
+                  <p>
+                     NDB Cluster es el sistema de base de datos distribuido subyacente a MySQL Cluster. Se puede utilizar independientemente de un servidor MySQL con usuarios que acceden al clúster a través de la API de NDB (C ++). 'NDB' son las siglas de Network Database.
+                  </p>
+                  <p>
+                     Desde la perspectiva del servidor MySQL, NDB Cluster es un motor de almacenamiento para almacenar tablas de filas.
+                  </p>
+                  <p>
+                     Desde la perspectiva del NDB Cluster, una instancia de MySQL Server es un proceso API conectado al Cluster. NDB Cluster puede admitir simultáneamente el acceso desde otros tipos de procesos API, incluidos Memcached, JavaScript / Node.JS, Java, JPA y HTTP / REST. Todos los procesos de API pueden operar en las mismas tablas y datos almacenados en el NDB Cluster.
+                  </p>
+                  <p>
+                     MySQL Cluster utiliza MySQL Server para proporcionar las siguientes capacidades además de Ndb Cluster:
+                  </p>
+                  <p>
+                     Capacidad de análisis / optimización / ejecución de SQL
+                  </p>
+                  <p>
+                     Conectores a aplicaciones a través de JDBC, ODBC, etc.
+                  </p>
+                  <p>
+                     Mecanismo de unión de mesa cruzada
+                  </p>
+                  <p>
+                     Autenticación y autorización de usuarios
+                  </p>
+                  <p>
+                     Replicación de datos asincrónica a otros sistemas
+                  </p>
+                  <p>
+                     Todos los procesos de API, incluido el servidor MySQL, utilizan la biblioteca cliente NDBAPI C ++ para conectarse al clúster NDB y realizar operaciones.
+                  </p>
+               </div>
+            </blockquote>
+            <p>
+               De acuerdo a lo analizado nos queda claro que MariaDB no es MySQL sin embargo comparten ficheros binarios gracias a que es una rama que se generó a partir del la original "MySQL" por lo que tiene, las mismas capacidades y las suyas propias dado que continúan trabajando en la misma así como Oracle continúa trabajando en nuevas funcionalidades, controladores y mucho más en MySQL. Sin embargo a partir de la ramificación las licencias han tenido cambios repentinos, así que Oracle recomienda versiones actualizadas, ya que estas poseen licencias actualizadas. El proceso de compra se realizó mientras MySQL estaba bajo licencia GPL lo cual dificulta la privatización del acceso al código fuente, pero no a los cambios incorporados desde la fecha de compra por parte de Oracle, ya que esta hace todo lo posible por restringir el uso y el acceso a estos mediante excepciones a las licencias que están sujetos a revisiones.
+            </p>
+            <p>
+               Oracle compro los derechos del lenguaje Java  y está sucediendo algo parecido con las licencias. Mira esta noticia sobre enfrentamientos judiciales entre Oracle y Google aquí https://www.lainformacion.com/tecnologia/oracle-gana-juicio-a-google-por-los-derechos-de-autor-de-codigo-java-en-android/6345089/
+            </p>
+            <!-- https://mariadb.org/tag/licensing/ -->
+            <p>
+               Ahora veamos que tiene que decir la fundación MariaDB con  respecto a todo esto de las licencias de MySQL.
+            </p>
+            <blockquote class="w3-tiny">
+               <div class="cita w3-panel w3-light-grey w3-texdding">
+                  <p>
+                     Recientemente se nos ha señalado que las páginas de manual de MySQL han sido renovadas. El cambio se realizó de forma bastante silenciosa pasando de MySQL 5.5.30 a MySQL 5.5.31. Esto afecta a todas las páginas del directorio man / del código fuente.
+                  </p>
+                  <p>
+                     Puede notar que los cambios se han producido durante este breve período de tiempo (5.5.30-> 5.5.31). Las páginas del manual antiguas se publicaron bajo la siguiente licencia:
+                  </p>
+                  <p>
+                     Esta documentación es software gratuito; Puede redistribuirlo y / o modificarlo solo bajo los términos de la Licencia Pública General GNU publicada por la Free Software Foundation; Versión 2 de la Licencia.
+                  </p>
+                  <p>
+                     Las nuevas páginas de manual (siguientes a 5.5.31 y posteriores, aún válidas para 5.5.32) se publican bajo la siguiente licencia:
+                  </p>
+                  <p>
+                     Este software y la documentación relacionada se proporcionan bajo un contrato de licencia que contiene restricciones de uso y divulgación y están protegidos por las leyes de propiedad intelectual. Salvo que se permita expresamente en su contrato de licencia o que lo permita la ley, no puede usar, copiar, reproducir, traducir, difundir, modificar, licenciar, transmitir, distribuir, exhibir, ejecutar, publicar o exhibir cualquier parte, en cualquier forma, o Por cualquier medio. Se prohíbe la ingeniería inversa, el desmontaje o la descompilación de este software, a menos que lo exija la ley para su interoperabilidad.
+                  </p>
+                  <p>
+                     Claramente, esto no es muy amigable con MySQL en Oracle. La nueva licencia también se ha vuelto mucho más larga (para aclarar que no se publica bajo la GPL). Si bien lo siguiente se tomó de la herramienta resolveip, el aviso de derechos de autor es el mismo para todas las páginas de manual. Puede comparar la página de manual de 5.5.30 con la página de manual de 5.5.31.
+                  </p>
+                  <p>
+                     Leer de la fuente original aquí https://mariadb.org/mysql-man-pages-silently-relicensed-away-from-gpl/
+                  </p>
+               </div>
+            </blockquote>
+            <!-- 
+
+
+            <p>
+            "Un desarrollador puede optar por distribuir una copia de un trabajo derivado exclusivamente bajo los términos de la GPL en cualquier momento eliminando el aviso de Excepción de licencia de FOSS de esa copia del Programa e incluyendo los avisos de GPL correspondientes."
+            </p> 
+
+
+            -->
+            <!-- 
+
+            <p>
+            Por lo que en esta publicacion nos animan a instalar mariadb https://es.linux-console.net/?p=865
+            </p>
+
+            -->
+            <p>
+               Conclusión
+            </p>
+            <p>
+               MySQL ha sufrido cambios, a raíz del cambio de propietario, sin embargo la fundación MariaDB se ha encargado de que las herramientas para desarrolladores sigan siendo de acceso público y que podamos crear y distribuir programas gratuitamente o cobrar por los mismos sin ningún problema de licencias, sin embargo si una empresa decida incorporar cambios actualizados de MySQL deber apagar licencias de uso sin embargo también están sujetas a la licencia GPL y para los desarrolladores no hay nada,  solo  que deberán retirar las licencias que aplicaban bajo la excepción FOSS y listo ya puede usar las herramientas. Todo el panorama está enfocado a compañías OEM (fabricantes de equipos originales), ISV (proveedores de software independientes), VAR (revendedores de valor agregado) Entonces PhpMyadmin  puede estar bajo los ISV sin embargo el paquete XAMPP proporciona MariaDB lo cual los exonera de las licencias  y podemos seguir disfrutando del privilegio de emplear estas herramientas en nuestros desarrollos. Por otro lado están los vendedores de servicio de alojamiento lo cual trabajan de manera interdependiente y lo más seguro ellos si están pagando las licencias a no ser  que sus servidores posean  actualizaciones de MySQL  y no MariasDB en el corazón del mismo.
+            </p>
+            <p>
+               Referencias
+            </p>
+            <div class="w3-tiny">
+               <p>
+                  1.2.1 What is MySQL? (s. f.). Oracle. Recuperado 23 de junio de 2021, de https://docs.oracle.com/cd/E17952_01/mysql-5.7-en/what-is-mysql.htmlMariaDB. (s. f.). Wikipedia. Recuperado 23 de junio de 2021, de https://en.wikipedia.org/wiki/MariaDBMySQL. (s. f.). Wikipedia, la enciclopedia libre. Recuperado 23 de junio de 2021, de https://es.wikipedia.org/wiki/MySQLMySQL 5.7 reference manual. (s. f.). Oracle. Recuperado 23 de junio de 2021, de https://docs.oracle.com/cd/E17952_01/mysql-5.7-en/index.htmlMySQL :: Legal policies. (s. f.). Mysql. Recuperado 23 de junio de 2021, de https://www.mysql.com/about/legal/MySQL :: MySQL native driver for PHP - mysqlnd. (s. f.). Dev Mysql. Recuperado 23 de junio de 2021, de https://dev.mysql.com/downloads/connector/php-mysqlnd/NDB cluster. (s. f.). Wikipedia. Recuperado 23 de junio de 2021, de https://en.wikipedia.org/wiki/NDB_Cluster
+            https://www.mysql.com/about/legal/
+               </p>
+            </div>
+            <!-- 
+
+            https://docs.oracle.com/cd/E17952_01/mysql-5.7-en/index.html
+            https://en.wikipedia.org/wiki/NDB_Cluster
+            https://docs.oracle.com/cd/E17952_01/mysql-5.7-en/what-is-mysql.html
+            https://www.mysql.com/about/legal/
+            https://www.oracle.com/legal/terms.html
+            https://dev.mysql.com/downloads/connector/php-mysqlnd/
+            https://es.wikipedia.org/wiki/MySQL
+            https://en.wikipedia.org/wiki/MariaDB
+
+
+            -->
+         </div>
+      </div>
+   </body>
+</html>

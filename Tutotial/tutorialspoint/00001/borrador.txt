@@ -1,0 +1,98 @@
+
+
+
+Que es MariaDB?
+
+MariaDB es una bifurcación del sistema de gestión de bases de datos relacionales MySQL. Los desarrolladores originales de MySQL crearon MariaDB después de las preocupaciones planteadas por la adquisición de MySQL por parte de Oracle. Este tutorial proporcionará una introducción rápida a MariaDB y le ayudará a lograr un alto nivel de comodidad con la programación y administración de MariaDB.
+
+Audiencia
+Este tutorial está dirigido a desarrolladores novatos y a aquellos que son nuevos en MariaDB. Les guía en la comprensión de conceptos básicos a más avanzados en MariaDB. Después de completar este tutorial, su base firme en MariaDB y su nivel de experiencia le permitirán comenzar a desarrollar y desarrollar fácilmente sus conocimientos.
+
+Prerrequisitos
+El tutorial asume su familiaridad con los sistemas de administración de bases de datos relacionales, los lenguajes de consulta, MySQL y la programación general. También asume familiaridad con las operaciones típicas de la base de datos en una aplicación.
+
+
+MariaDB es un sistema de administración de bases de datos relacionales de código abierto (RDBMS) que es un reemplazo directo altamente compatible de MySQL.
+
+MariaDB se desarrolló como una bifurcación de software de MySQL en 2009 en respuesta a la adquisición de MySQL por parte de Oracle. MariaDB tiene la intención de seguir siendo software gratuito y de código abierto bajo la Licencia Pública General GNU.
+
+El sitio web del tutorial MariaDB le proporciona conocimientos y habilidades prácticas para que pueda dominar MariaDB rápidamente. Para aprovechar al máximo los tutoriales, debe estar familiarizado con los conceptos de RDBMS. Sin embargo, no es obligatorio.
+
+
+Funciones MariaDB
+Funciones - AlphabeticalMariaDB 
+Funciones enumeradas alfabéticamente
+Funciones - CategoryMariaDB 
+Funciones enumeradas por categoría
+
+Índices, restricciones y claves de MariaDB
+
+Claves primarias Cree, modifique y elimine claves primarias
+Restricciones únicas Cree, agregue y elimine restricciones únicas
+Índices: crear, eliminar y cambiar el nombre de los índices (ajuste del rendimiento)
+Privilegios y contraseñas de MariaDB
+Otorgar / revocar privilegios Otorgar o revocar privilegios
+Cambiar contraseñaCambiar la contraseña de un usuario
+Administración de la base de datos MariaDB
+Cuentas de base de datos de usuarios
+
+Programación MariaDB
+Funciones Crear y soltar funciones
+Procedimientos Crear y eliminar procedimientos
+Cursores Crear cursores dentro de programas almacenados
+Literales (constantes) Cadena, número, fecha, hora, literales booleanos
+Declarar variables Declarar variables dentro de programas almacenados
+Lazos y sentencias condicionales Sentencia LOOP, IF-THEN-ELSE y otros
+AUTO_INCREMENT (Secuencias) Crea una secuencia de números usando el atributo AUTO_INCREMENT
+Comentarios dentro de SQL Cómo crear comentarios dentro de su declaración SQL
+Operadores de comparación MariaDB
+Operadores de comparación Operadores como =, <>,! =,>, <, Etc.
+Tipos de consultas MariaDB
+Sentencia SELECT Recuperar registros de una o más tablas
+Sentencia SELECT LIMIT Recupere registros de una tabla y limite los resultados
+INSERTAR Instrucción: insertar registros en una tabla
+Declaración UPDATE Actualizar registros existentes en una tabla
+DELETE Statement Elimina registros de una tabla
+Declaración DELETE LIMIT Elimina registros y limita el número de eliminaciones
+Declaración TRUNCATE TABLE Elimina todos los registros de una tabla (sin reversión)
+Operador UNION Combina 2 conjuntos de resultados (elimina los duplicados)
+Operador UNION ALL Combine 2 conjuntos de resultados (incluye duplicados)
+Operador INTERSECT Intersección de 2 conjuntos de resultados
+Subconsultas Una consulta dentro de una consulta
+MariaDB se une
+JOIN Tables Uniones internas y externas
+Alias ​​de MariaDB
+ALIAS Crea un nombre temporal para una columna o tabla
+Cláusulas MariaDB
+Cláusula DISTINCT Eliminar duplicados de los resultados
+FROM ClauseList tablas e información de unión
+Resultados de WHERE ClauseFilter
+ORDER BY ClauseSort resultados de la consulta
+GROUP BY Cláusula Agrupar por una o más columnas
+HAVING Cláusula Restringir los grupos de filas devueltas
+Funciones SQL de MariaDB
+Función COUNT Devuelve el recuento de una expresión
+Función SUM Devuelve la suma de una expresión
+Función MIN Devuelve el mínimo de una expresión
+Función MAX Devuelve el máximo de una expresión
+Función AVG Devuelve el promedio de una expresión
+Condiciones de MariaDB
+Y Condición 2 o más condiciones que deben cumplirse
+O Condición Cualquiera de las condiciones se cumple
+Y y OR Combine las condiciones Y y OR
+Condición LIKE Utilice una coincidencia de patrones simple (comodines) en una cláusula WHERE
+Condición RLIKE Utilice la coincidencia de expresiones regulares en una cláusula WHERE
+Condición IN Alternativa a múltiples condiciones de quirófano
+NO CondiciónNegar una condición
+IS NULL ConditionTest para un valor NULL
+NO ES NULO ConditionTest para un valor NO NULO
+ENTRE Condición Recuperación dentro de un rango (inclusive)
+EXISTS ConditionCondition se cumple si la subconsulta devuelve al menos una fila
+Tablas y vistas de MariaDB
+CREAR TABLECrear una tabla
+CREAR TABLA ASCrear una tabla a partir de la definición y los datos de otra tabla
+ALTER TABLEAñadir, modificar, borrar columnas en una tabla; Cambiar el nombre de una tabla
+DROP TABLEDEliminar una tabla
+VIEW Tablas virtuales (vistas de otras tablas)
+Tipos de datos MariaDB
+Tipos de datosTipos de datos en MariaDB

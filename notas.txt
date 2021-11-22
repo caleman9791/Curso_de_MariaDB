@@ -1,0 +1,276 @@
+sudo /opt/lampp/lampp start
+
+En el directorio documentación mas detalles 
+////////////////////////////////////////////
+DB pruebas
+https://dev.mysql.com/doc/index-other.html
+////////////////////////////////////////////
+
+https://www.mariadbtutorial.com/
+https://www.tutorialspoint.com/mariadb/index.htm
+Conceptos
+ 
+MariaDB - Home
+MariaDB - Introduction
+MariaDB - Installation
+MariaDB - Administration
+MariaDB - PHP Syntax
+MariaDB - Connection
+MariaDB - Create Database
+MariaDB - Drop Database
+MariaDB - Select Database
+MariaDB - Data Types
+MariaDB - Create Tables
+MariaDB - Drop Tables
+MariaDB - Insert Query
+MariaDB - Select Query
+MariaDB - Where Clause
+MariaDB - Update Query
+MariaDB - Delete Query
+MariaDB - Like Clause
+MariaDB - Order By Clause
+MariaDB - Join
+MariaDB - Null Values
+MariaDB - Regular Expression
+MariaDB - Transactions
+MariaDB - Alter Command
+Indexes & Statistics Tables
+MariaDB - Temporary Tables
+MariaDB - Table Cloning
+MariaDB - Sequences
+MariaDB - Managing Duplicates
+MariaDB - SQL Injection Protection
+MariaDB - Backup Methods
+MariaDB - Backup Loading Methods
+MariaDB - Useful Functions
+
+MySQL - Inicio
+MySQL - Introducción
+MySQL - Instalación
+MySQL - Administración
+MySQL - Sintaxis PHP
+MySQL - Conexión
+MySQL - Crear base de datos
+MySQL - Eliminar base de datos
+MySQL - Seleccionar base de datos
+MySQL - Tipos de datos
+MySQL - Crear tablas
+MySQL - Tablas sueltas
+MySQL - Insertar consulta
+MySQL - Seleccionar consulta
+MySQL - Cláusula Where
+MySQL - Consulta de actualización
+MySQL - Eliminar consulta
+MySQL - Cláusula Me gusta
+MySQL - Clasificación de resultados
+MySQL: uso de Join
+MySQL - Valores NULL
+MySQL - Regexps
+MySQL - Transacciones
+MySQL - Alterar comando
+MySQL: índices
+MySQL - Tablas temporales
+MySQL - Clonar tablas
+MySQL - Información de la base de datos
+MySQL: uso de secuencias
+MySQL - Manejo de duplicados
+MySQL - Inyección SQL
+MySQL - Exportación de base de datos
+MySQL - Importación de base de datos
+
+
+Sección 1. Empezando con MySQL
+
+Esta sección le ayuda a comenzar con MySQL. Comenzaremos a instalar MySQL, descargando una base de datos de muestra y cargando datos en el servidor MySQL para practicar.
+
+    Instalación del servidor de base de datos MySQL: muestra paso a paso cómo instalar el servidor de base de datos MySQL en su computadora.
+    Descarga de la base de datos de muestra de MySQL: le presenta una base de datos de muestra de MySQL denominada classicmodels. También le proporcionamos enlaces para descargar la base de datos de muestra y sus diagramas.
+    Carga de la base de datos de muestra en su propio servidor de base de datos MySQL: lo guiará a través de los pasos de cómo cargar la base de datos de muestra de modelos clásicos en su servidor de base de datos MySQL para practicar.
+
+Sección 2. Consulta de datos
+
+Esta sección le ayuda a aprender cómo consultar datos desde el servidor de base de datos MySQL. Comenzaremos con una declaración SELECT simple que le permite consultar datos de una sola tabla.
+
+    SELECT: muestra cómo usar una instrucción SELECT simple para consultar los datos de una sola tabla.
+
+Sección 3. Clasificación de datos
+
+    ORDER BY: muestra cómo ordenar el conjunto de resultados mediante la cláusula ORDER BY. También se cubrirá el orden de clasificación personalizado con la función CAMPO.
+
+Sección 4. Filtrado de datos
+
+    DÓNDE: aprenda a utilizar la cláusula DÓNDE para filtrar filas según las condiciones especificadas.
+    SELECT DISTINCT: muestra cómo utilizar el operador DISTINCT en la instrucción SELECT para eliminar filas duplicadas en un conjunto de resultados.
+    Y: le presenta el operador Y para combinar expresiones booleanas para formar una condición compleja para filtrar datos.
+    O - presentarle al operador OR y mostrarle cómo combinar el operador OR con el operador AND para filtrar datos.
+    IN: muestra cómo usar el operador IN en la cláusula WHERE para determinar si un valor coincide con algún valor de una lista o subconsulta.
+    BETWEEN: muestra cómo consultar datos basados ​​en un rango usando el operador BETWEEN.
+    LIKE: proporciona una técnica para consultar datos según un patrón específico.
+    LIMIT: use LIMIT para restringir el número de filas devueltas por la instrucción SELECT
+    IS NULL: prueba si un valor es NULL o no mediante el operador IS NULL.
+
+Sección 5. Juntar mesas
+
+    Alias ​​de tabla y columna: le presenta los alias de tabla y columna.
+    Uniones: le brinda una descripción general de las uniones admitidas en MySQL, incluida la combinación interna, la combinación izquierda y la combinación derecha.
+    INNER JOIN: consulta las filas de una tabla que tiene filas coincidentes en otra tabla.
+    LEFT JOIN: devuelve todas las filas de la tabla izquierda y las filas coincidentes de la tabla derecha o nulo si no se encuentran filas coincidentes en la tabla derecha.
+    RIGHT JOIN: devuelve todas las filas de la tabla derecha y las filas coincidentes de la tabla izquierda o nulo si no se encuentran filas coincidentes en la tabla izquierda.
+    CROSS JOIN: crea un producto cartesiano de filas de varias tablas.
+    Autocombinación: une una tabla a sí misma usando el alias de la tabla y conecta filas dentro de la misma tabla usando la combinación interna y la combinación izquierda.
+
+Sección 6. Agrupación de datos
+
+    AGRUPAR POR: muestra cómo agrupar filas en grupos según columnas o expresiones.
+    TENIENDO - filtrar los grupos por una condición específica.
+    ROLLUP: genera múltiples conjuntos de agrupaciones considerando una jerarquía entre las columnas especificadas en la cláusula GROUP BY.
+
+ Sección 7. Subconsultas
+
+    Subconsulta: muestra cómo anidar una consulta (consulta interna) dentro de otra consulta (consulta externa) y utilizar el resultado de la consulta interna para la consulta externa.
+    Tabla derivada: le presenta el concepto de tabla derivada y le muestra cómo usarlo para simplificar consultas complejas.
+    EXISTS: prueba la existencia de filas.
+
+Sección 8. Expresiones de tabla comunes
+
+    Expresión de tabla común o CTE: le explica el concepto de expresión de tabla común y le muestra cómo usar CTE para consultar datos de tablas.
+    CTE recursivo: utilice el CTE recursivo para recorrer los datos jerárquicos.
+
+Sección 9. Establecer operadores
+
+    UNION y UNION ALL: combine dos o más conjuntos de resultados de varias consultas en un único conjunto de resultados.
+    INTERSECT: muestra un par de formas de simular el operador INTERSECT.
+    MINUS: le explica el operador SQL MINUS y le muestra cómo simularlo.
+
+Sección 10. Modificar datos en MySQL
+
+En esta sección, aprenderá a insertar, actualizar y eliminar datos de tablas usando varias declaraciones de MySQL.
+
+    INSERT: utilice varias formas de la instrucción INSERT para insertar datos en una tabla.
+    INSERTAR varias filas: inserte varias filas en una tabla.
+    INSERT INTO SELECT: inserta datos en una tabla del conjunto de resultados de una consulta.
+    INSERT IGNORE: explica la instrucción INSERT IGNORE que inserta filas en una tabla e ignora las filas que causan errores.
+    ACTUALIZAR: aprenda a usar la instrucción ACTUALIZAR y sus opciones para actualizar los datos en las tablas de la base de datos.
+    UPDATE JOIN: muestra cómo realizar la actualización de tablas cruzadas usando la instrucción UPDATE JOIN con INNER JOIN y LEFT JOIN.
+    DELETE: muestra cómo usar la instrucción DELETE para eliminar filas de una o más tablas.
+    ON DELETE CASCADE: aprenda a usar la acción referencial ON DELETE CASCADE para una clave externa para eliminar datos de una tabla secundaria automáticamente cuando elimina datos de una tabla principal.
+    DELETE JOIN: muestra cómo eliminar datos de varias tablas.
+    REEMPLAZAR: aprender a insertar o actualizar datos depende de si los datos existen en la tabla o no.
+    Declaración preparada: muestra cómo utilizar la declaración preparada para ejecutar una consulta.
+
+
+Sección 11. Transacción MySQL
+
+    Transacción: aprenda sobre transacciones MySQL y cómo usar COMMIT y ROLLBACK para administrar transacciones en MySQL.
+    Bloqueo de tabla: aprenda a usar el bloqueo de MySQL para cooperar el acceso a la tabla entre sesiones.
+
+Sección 12. Gestión de tablas y bases de datos MySQL
+
+Esta sección le muestra cómo administrar los objetos de base de datos más importantes en MySQL, incluidas las bases de datos y las tablas.
+
+    Seleccionar una base de datos MySQL: muestra cómo usar la instrucción USE para seleccionar una base de datos MySQL a través del programa mysql y MySQL Workbench.
+    Administración de bases de datos: aprenda varias declaraciones para administrar bases de datos MySQL, incluida la creación de una nueva base de datos, la eliminación de una base de datos existente, la selección de una base de datos y la lista de todas las bases de datos.
+    CREAR BASE DE DATOS: muestra cómo crear una nueva base de datos en MySQL Server.
+    DROP DATABASE: aprenda a eliminar una base de datos existente.
+    Motores de almacenamiento MySQL: es fundamental comprender las características de cada motor de almacenamiento para poder utilizarlos de forma eficaz para maximizar el rendimiento de sus bases de datos.
+    CREATE TABLE: muestra cómo crear nuevas tablas en una base de datos mediante la instrucción CREATE TABLE.
+    Secuencia MySQL: muestra cómo usar una secuencia para generar números únicos automáticamente para la columna de clave principal de una tabla.
+    ALTER TABLE: aprenda a usar la instrucción ALTER TABLE para cambiar la estructura de una tabla.
+    Cambiar el nombre de una tabla: muestra cómo cambiar el nombre de una tabla mediante la instrucción RENAME TABLE.
+    Eliminar una columna de una tabla: muestra cómo usar la instrucción ALTER TABLE DROP COLUMN para eliminar una o más columnas de una tabla.
+    Agregar una nueva columna a una tabla: muestra cómo agregar una o más columnas a una tabla existente usando la instrucción ALTER TABLE ADD COLUMN.
+    DROP TABLE: muestra cómo eliminar tablas existentes mediante la instrucción DROP TABLE.
+    Tablas temporales: analice la tabla temporal de MySQL y le muestre cómo administrar las tablas temporales.
+    TRUNCATE TABLE: muestra cómo utilizar la instrucción TRUNCATE TABLE para eliminar rápidamente todos los datos de una tabla.
+    Columnas generadas: aprenda a usar las columnas generadas por MySQL para almacenar datos calculados a partir de una expresión u otras columnas.
+
+Sección 13. Tipos de datos MySQL
+
+    Tipos de datos MySQL: le muestra varios tipos de datos en MySQL para que pueda aplicarlos de manera efectiva en el diseño de tablas de bases de datos.
+    INT: muestra cómo usar el tipo de datos enteros.
+    DECIMAL: muestra cómo usar el tipo de datos DECIMAL para almacenar valores exactos en formato decimal.
+    BIT: le presenta el tipo de datos BIT y cómo almacenar valores de bits en MySQL.
+    BOOLEAN: explica cómo MySQL maneja los valores booleanos usando TINYINT (1) internamente.
+    CHAR: una guía del tipo de datos CHAR para almacenar la cadena de longitud fija.
+    VARCHAR: le brinda la guía esencial para el tipo de datos VARCHAR.
+    TEXTO: muestra cómo almacenar datos de texto utilizando el tipo de datos TEXT.
+    FECHA: le presenta el tipo de datos FECHA y le muestra algunas funciones de fecha para manejar los datos de fecha de manera efectiva.
+    TIEMPO: lo guía a través de las características del tipo de datos TIEMPO y le muestra cómo usar algunas funciones temporales útiles para manejar datos de tiempo.
+    DATETIME: le presenta el tipo de datos DATETIME y algunas funciones útiles para manipular los valores DATETIME.
+    TIMESTAMP: le presenta TIMESTAMP y sus características llamadas inicialización automática y actualización automática que le permite definir columnas autoinicializadas y autoactualizadas para una tabla.
+    JSON: muestra cómo usar el tipo de datos JSON para almacenar documentos JSON.
+    ENUM: aprenda a utilizar correctamente el tipo de datos ENUM para almacenar valores de enumeración.
+
+
+Sección 14. Restricciones de MySQL
+
+    Restricción NOT NULL: le presenta la restricción NOT NULL y le muestra cómo declarar una columna NOT NULL o agregar una restricción NOT NULL a una columna existente.
+    Restricción de clave principal: le guiará sobre cómo utilizar la restricción de clave principal para crear la clave principal para una tabla.
+    Restricción de clave externa: preséntele la clave externa y le mostrará paso a paso cómo crear y eliminar claves externas.
+    Deshabilitar las verificaciones de claves externas: aprenda a deshabilitar las verificaciones de claves externas.
+    Restricción ÚNICA: muestra cómo usar la restricción ÚNICA para imponer la unicidad de los valores en una columna o un grupo de columnas en una tabla.
+    Restricción CHECK: aprenda a crear restricciones CHECK para garantizar la integridad de los datos.
+    VERIFICAR la emulación de restricciones: si usa MySQL 8.0.15 o una versión anterior, puede emular las restricciones VERIFICAR mediante vistas o activadores.
+
+
+Sección 15. Globalización de MySQL
+
+    Conjunto de caracteres: analice el conjunto de caracteres y le muestre paso a paso cómo realizar varias operaciones en conjuntos de caracteres.
+    Intercalación: analice la intercalación y le muestre cómo establecer conjuntos de caracteres y intercalaciones para el servidor, la base de datos, las tablas y las columnas de MySQL.
+
+Sección 16. Importación y exportación de MySQL
+
+    Importar archivo CSV a una tabla MySQL: muestra cómo usar la instrucción LOAD DATA INFILE para importar un archivo CSV a una tabla MySQL.
+    Exportar tabla MySQL a CSV: aprenda varias técnicas sobre cómo exportar una tabla MySQL a un formato de archivo CSV.
+
+Sección 17. Técnicas avanzadas
+
+    Clasificación natural: lo guiará a través de varias técnicas de clasificación natural en MySQL utilizando la cláusula ORDER BY.
+
+
+
+
+
+
+
+
+
+
+
+
+=============================================================================================================
+    Manual de referencia de MySQL 5.7
+
+    Prefacio y avisos legales
+    Información general
+    Instalación y actualización de MySQL
+    Tutorial
+    Programas MySQL
+    Administración del servidor MySQL
+    Seguridad
+    Copia de seguridad y recuperación
+    Mejoramiento
+    Estructura del idioma
+    Conjuntos de caracteres, intercalaciones, Unicode
+    Tipos de datos
+    Funciones y operadores
+    Declaraciones SQL
+    El motor de almacenamiento InnoDB
+    Motores de almacenamiento alternativos
+    Replicación
+    Replicación de grupo
+    Shell de MySQL
+    Usar MySQL como almacén de documentos
+    MySQL NDB Cluster 7.5 y NDB Cluster 7.6
+    Fraccionamiento
+    Objetos almacenados
+    Information_SCHEMA Tablas
+    Esquema de rendimiento de MySQL
+    Esquema del sistema MySQL
+    Conectores y API
+    Edición empresarial MySQL
+    Banco de trabajo MySQL
+    MySQL 5.7 Preguntas frecuentes
+    Mensajes de error y problemas comunes
+    Índices
+    Glosario de MySQL

@@ -1,0 +1,75 @@
+    ASCII
+    BIN
+    BINARY Operator
+    BIT_LENGTH
+    CAST
+    CHAR Function
+    CHAR_LENGTH
+    CHARACTER_LENGTH
+    CHR
+    CONCAT
+    CONCAT_WS
+    CONVERT
+    ELT
+    EXPORT_SET
+    EXTRACTVALUE
+    FIELD
+    FIND_IN_SET
+    FORMAT
+    FROM_BASE64
+    HEX
+    INSERT Function
+    INSTR
+    LCASE
+    LEFT
+    LENGTH
+    LENGTHB
+    LIKE
+    LOAD_FILE
+    LOCATE
+    LOWER
+    LPAD
+    LTRIM
+    MAKE_SET
+    MATCH AGAINST
+    MID
+    NATURAL_SORT_KEY
+    NOT LIKE
+    NOT REGEXP
+    OCTET_LENGTH
+    ORD
+    Perl Compatible Regular Expressions (PCRE) Documentation
+    POSITION
+    QUOTE
+    REGEXP
+    REGEXP_INSTR
+    REGEXP_REPLACE
+    REGEXP_SUBSTR
+    Regular Expressions Functions
+    Regular Expressions Overview
+    REPEAT Function
+    REPLACE Function
+    REVERSE
+    RIGHT
+    RLIKE
+    RPAD
+    RTRIM
+    SFORMAT
+    SOUNDEX
+    SOUNDS LIKE
+    SPACE
+    STRCMP
+    String Functions
+    SUBSTR
+    SUBSTRING
+    SUBSTRING_INDEX
+    TO_BASE64
+    TO_CHAR
+    TRIM
+    TRIM_ORACLE
+    Type Conversion
+    UCASE
+    UNHEX
+    UPDATEXML
+    UPPER
+    WEIGHT_STRING

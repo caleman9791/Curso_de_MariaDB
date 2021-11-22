@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8"/>
+      <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+      <title>
+         Document
+      </title>
+   </head>
+   <body>
+      <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"/>
+      <div class="">
+         <div class="">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis dignissimos, eligendi ducimus et, harum modi non. Nemo enim aspernatur quaerat in quisquam perspiciatis architecto, aliquam. Voluptatum fugit quo dolor voluptate!
+         </div>
+         <div class="w3-container">
+            <p>
+               En la entrada anterior observamos detalles importantes relacionados a la conexión con bases de datos usando PHP. La intención no es mostrar mucho aquí sobre PHP, ya que eso lo haré en su momento mediante entradas de blog destinadas para ello. En este punto ya debemos saber que debemos elegir, al menos con el uso de MariaDB entre las dos clases principales que tiene el lenguaje de PHP. Yo usaré "PDO" en todo momento. Si no recuerdas puedes ver  el  enlace de la documentación oficial aquí: https://www.php.net/manual/en/mysqlinfo.api.choosing.php
+            </p>
+            <p>
+               En cuanto a los drivers de "PDO" puedo decir que aprender "PDO" te facilita la conexión con diferentes bases de datos usando la misma interfaz de clase. Para ver los drivers disponibles para "PDO" aquí; https://www.php.net/manual/en/pdo.drivers.php
+            </p>
+            <p>
+               MariaDB se asocia bien con una amplia variedad de lenguajes de programación y marcos como PHP, C #, JavaScript, Ruby en rieles, Django y más. PHP sigue siendo el más popular de todos los idiomas disponibles debido a su simplicidad.
+            </p>
+            <p>
+               Aquí se muestra la declaración de una instancia de la clase "PDO" para establecer conexión con la base de datos. Fíjese en los parámetros se necesita para que su ejecución sea satisfactoria.
+            </p>
+            <div class="w3-panel w3-card w3-light-grey">
+               <div class="w3-code jsHigh notranslate">
+                  $dbh = new PDO('mysql:host=localhost;dbname=test', $user, $pass);
+               </div>
+            </div>
+            Observa lo que nos tiene que decir la documentación oficial en cuanto a la instancia  de esta clase.
+            <p>
+               Las conexiones se establecen creando instancias de la clase base PDO. No importa el controlador que se utilice; siempre se usará el nombre de la clase PDO. El constructor acepta parámetros para especificar el origen de la base de datos (conocido como DSN) y, opcionalmente, el nombre de usuario y la contraseña (si la hubiera).
+            </p>
+            <p>
+               Valida la informacion aqui: https://www.php.net/manual/es/pdo.connections.php
+            </p>
+            <p>
+               Ahora veremos el control de excepciones. Esto es importante, ya que podemos escribir instrucciones que trabajen posibles errores en tiempo de ejecución. Errores inesperados que pueden hacer que nuestra aplicación colapse.
+            </p>
+            <div class="w3-panel w3-card w3-light-grey">
+               <div class="w3-code jsHigh notranslate">
+                  try {
+                  <br/>
+                  $mbd = new PDO('mysql:host=localhost;dbname=prueba', $usuario, $contraseña);
+                  <br/>
+                  foreach($mbd->query('SELECT * from FOO') as $fila)
+                  <br/>
+                  {
+                  <br/>
+                  print_r($fila);
+                  <br/>
+                  }
+                  <br/>
+                  $mbd = null;
+                  <br/>
+                  } catch (PDOException $e) {
+                  <br/>
+                  print "¡Error!: " . $e->getMessage();
+                  <br/>
+                  die();
+                  <br/>
+                  }
+                  <br/>
+               </div>
+            </div>
+            <p>
+               No te preocupes por comprender la estructura anterior, ahora mismo te la explicaré para que en futuras ocasiones puedas implementar esta y así controlar excepciones que pudientes ser lanzadas lo cual los motivos serian desconocidos y además no estriamos presentes ella ejecución del mismo, lo que tenemos que considerar si algo falla lo aremos con esta estructura. Recuerda que tiempo de ejecución significa cunado uno de los usuarios ejecuta tu programa y el servidor está en pleno procesamiento del las instrucciones que le proveemos nosotros los programadores previamente al sistema.
+            </p>
+            <p>
+               Comencemos con la explicación. try catch en  español se puede traducir como inténtalo  y captura. Observa que try posee llaves después de esa palabra reservada así try {} y catch de igual forma a diferencia que necesita un parámetro lo cual lo usará para desplegar el dato de la excepción, lo que algunos llaman error, no importa la idea es la misma si sucede algo captura el porqué  cuando y  donde, del error, falla o excepción, como mejor desees llamarlo, pero ya le advierto que los errores son tratados como excepciones.
+            </p>
+            /* Properties */
+            <br/>
+            public array $errorInfo;
+            <br/>
+            protected string $code;
+            <br/>
+            /* Inherited properties */
+            <br/>
+            protected string $message;
+            <br/>
+            protected int $code;
+            <br/>
+            protected string $file;
+            <br/>
+            protected int $line;
+            <br/>
+            /* Inherited methods */
+            <br/>
+            final public Exception::getMessage(): string
+            <br/>
+            final public Exception::getPrevious(): Throwable|null
+            <br/>
+            final public Exception::getCode(): int
+            <br/>
+            final public Exception::getFile(): string
+            <br/>
+            final public Exception::getLine(): int
+            <br/>
+            final public Exception::getTrace(): array
+            <br/>
+            final public Exception::getTraceAsString(): string
+            <br/>
+            public Exception::__toString(): string
+            <br/>
+            final private Exception::__clone(): void
+            <br/>
+            <p>
+               Ahora que sabes esto puedo decir que deberías ir a ver que tipos de excepciones y datos puedes obtener y manejar. Dejo enlace aquí https://www.php.net/manual/en/class.pdoexception.php
+            </p>
+            <p>
+               Más adelante intentaré reproducir excepciones  para que puedas ver en la práctica como funcionan y como manejar los mismos. Por ahora es bueno que tengas estos conocimientos, ya que en un futuro trabajarás diferentes excepciones según la implementación que necesites en tu aplicación. Aunque no es complejo, pero es bueno tenerlo en consideración.
+            </p>
+            <div class="">
+               Lorem ipsum dolor sit amet consectetur adipisicing, elit. Alias et impedit consequuntur quod veniam ratione ab neque quaerat inventore eos beatae similique, aliquam dicta, dolorum unde, enim tenetur rerum. Expedita.
+            </div>
+            <p>
+               Referencias
+            </p>
+            <div class="w3-tiny">
+               <p>
+                  PHP: Excepciones - manual. (s. f.). PHP. Recuperado 5 de julio de 2021, de https://www.php.net/manual/es/language.exceptions.phpPHP: Exception - manual. (s. f.). PHP. Recuperado 5 de julio de 2021, de https://www.php.net/manual/es/class.exception.phpPHP: Operadores de control de errores - Manual. (s. f.). PHP. Recuperado 5 de julio de 2021, de https://www.php.net/manual/es/language.operators.errorcontrol.phpPHP: PDOException - manual. (s. f.). Php.Net. Recuperado 5 de julio de 2021, de https://www.php.net/manual/en/class.pdoexception.phpPHP: RuntimeException - manual. (s. f.). PHP. Recuperado 5 de julio de 2021, de https://www.php.net/manual/es/class.runtimeexception.php
+               </p>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

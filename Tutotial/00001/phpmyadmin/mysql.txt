@@ -1,0 +1,14 @@
+
+
+Licencia comercial de MySQL para OEM, ISV y VAR
+Oracle proporciona su servidor de base de datos MySQL y bibliotecas cliente MySQL bajo un modelo de licencia dual diseñado para satisfacer las necesidades de desarrollo y distribución de distribuidores comerciales (como OEM, ISV y VAR) y proyectos de código abierto.
+
+Para OEM, ISV, VAR y otros distribuidores de aplicaciones comerciales:
+
+OEM (fabricantes de equipos originales), ISV (proveedores de software independientes), VAR (revendedores de valor agregado) y otros distribuidores que combinan y distribuyen software con licencia comercial con software MySQL y no desean distribuir el código fuente del software con licencia comercial en la versión 2 De la Licencia Pública General GNU (la 'GPL') debe celebrar un contrato de licencia comercial con Oracle.
+
+Para proyectos de código abierto y otros desarrolladores de aplicaciones de código abierto:
+
+Para los desarrolladores de aplicaciones de software libre de código abierto ('FOSS') bajo la GPL que desean combinar y distribuir esas aplicaciones FOSS con el software MySQL, el software de código abierto MySQL de Oracle con licencia de la GPL es la mejor opción.
+
+Para los desarrolladores y distribuidores de software de código abierto con una licencia de FOSS distinta de la GPL, Oracle pone a disposición sus bibliotecas cliente MySQL con licencia GPL bajo una excepción de FOSS que permite el uso de esas bibliotecas cliente MySQL en determinadas condiciones sin que todo el trabajo derivado se pierda. Estar sujeto a la GPL.

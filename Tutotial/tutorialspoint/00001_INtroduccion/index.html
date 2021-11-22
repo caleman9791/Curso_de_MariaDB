@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8"/>
+      <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+      <title>
+         Document
+      </title>
+   </head>
+   <body>
+      <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"/>
+      <div class="w3-container">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aliquam repellendus, perspiciatis sapiente blanditiis quas ut exercitationem hic velit eveniet. Molestias suscipit alias aperiam vel vitae aliquid adipisci maxime sed.
+      </div>
+      <div class="w3-container">
+         <p>
+            Una aplicación de base de datos funciona de manera  separada de la aplicación principal o interfaz de usuario. La misma  almacena colecciones de datos. Cada base de datos emplea una o varias API para la creación, acceso, administración, búsqueda y replicación de los datos que contiene. En una organización es de vital importancia un sistema de bases de datos para así programar reportes automáticos que nos ayuden a tomar decisiones administrativas basadas en datos reales. Es complejo trabajar todo esto a mano, por lo que las bases de datos aceleran los procedimientos. Aunque una base de datos nos puede ayudar a tener control del inventario,  nóminas, inversiones, ganancias  y mucho más. Debemos tener en consideración la planificación estratégica de la misma. Tener conocimiento del Lenguaje SQL nos brinda todo un mundo de posibilidades en la toma de decisiones en nuestra organización. Inclusive  puede ofrecer servicios a comercios  que no tiene sus bases de datos bien optimizadas y pensadas para reportes estadísticos. La información almacenada de una amera estructurada  y pensada para la extracción de datos que nos puedan guiar sobre el contexto real que atraviesa la organización, empresa o comercio.
+         </p>
+         <p>
+            Trabajaremos en todo momento con MariaDB, sin embargo los conceptos que explicó son válidos  para cualquier base de datos relacional.
+         </p>
+         <p>
+            Hora vemos que son las bases de datos relacionales. Aprendamos sobre los conceptos necesarios para elaborar aplicaciones productivas nivel organizacional.
+         </p>
+         <p>
+            Los sistemas de administración de bases de datos relacionales, o RDBMS, almacenan datos en varias tablas, las relaciones entre estas tablas se establecen utilizando claves primarias y claves externas.
+         </p>
+         <p>
+            Características de las RDBMS "Bases de datos relacionales":
+         </p>
+         <p>
+            Estas nos permiten implementar una fuente de datos con tablas, columnas e índices. Aseguran la integridad de las referencias en filas de varias tablas. Actualizan automáticamente los índices. Interpretan consultas y operaciones SQL al manipular u  obtener datos de las tablas.
+         </p>
+         <p>
+            Terminología RDBMS
+         </p>
+         <ul class="w3-ul">
+            <li>
+               Base de datos: una base de datos es una fuente de datos que consta de tablas que contienen datos relacionados.
+            </li>
+            <li>
+               Tabla: Una tabla es como una hoja de cálculo, como es una matriz que contiene datos.
+            </li>
+            <li>
+               Columna: Una columna, que significa elemento de datos, es una estructura que contiene datos de un tipo. Por ejemplo, fechas, hora, moneda, textos, números, etc. Estos son considerados campos, lo cual varios campos componen un registro.
+            </li>
+            <li>
+               Fila: Una fila es una estructura que agrupa datos relacionados.  Por ejemplo, datos de un cliente. También se conoce como tupla, entrada o registro. Los registros son agrupados de forma vertical, mientras que las columnas se trabajan de forma horizontal.
+            </li>
+            <li>
+               Redundancia: Este término se refiere al almacenamiento de datos que aparecen más de una vez. Le adelanto que existen métodos para normalizar los datos que nos ayudan a eliminar o reducir al máximo la redundancia de datos. Podemos decir que la redundancia son datos que se repiten necesariamente. Aunque también puede significar aceleración de búsqueda cuando no referimos a redundancia en los índices.
+            </li>
+            <li>
+               Clave principal: Se refiere a un valor de identificación único. Este valor no puede aparecer dos veces dentro de una tabla y solo hay una fila asociada a él.
+            </li>
+            <li>
+               Clave externa: Una clave externa sirve como enlace entre dos tablas.
+            </li>
+            <li>
+               Clave compuesta: Una clave compuesta, o clave compuesta, es una clave que se refiere a varias columnas. Se refiere a varias columnas debido a que una columna carece de una calidad única. Por lo general esto se  traduce a tablas emergentes que relacionan unas tablas con otras.
+            </li>
+            <li>
+               Índice: Un índice es prácticamente idéntico al índice de un libro a diferencia que este trabaja de manera implícita en la base de datos generando un espacio  para sí. Facilitando las  consultas SQL  y evitando recorrido  por toda la base de datos para encontrar la información.
+            </li>
+            <li>
+               Integridad referencial: Este término se refiere a garantizar que todos los valores de clave externa apunten a filas existentes.
+            </li>
+         </ul>
+         <p>
+            Más adelante aprenderás más sobre MariaDB, mientras tanto,  repasemos algunos términos relacionados con las bases de datos.
+         </p>
+         <p>
+            Base de datos MariaDB
+         </p>
+         <p>
+            MariaDB es una bifurcación popular de MySQL creada por los desarrolladores originales de MySQL. Surgió de preocupaciones relacionadas con la adquisición de MySQL por parte de Oracle. Ofrece soporte tanto para pequeñas tareas de procesamiento de datos como para las necesidades empresariales. Su objetivo es ser un reemplazo directo de MySQL que requiere solo una simple desinstalación de MySQL y una instalación de MariaDB. MariaDB ofrece las mismas características de MySQL y mucho más.
+         </p>
+         <p>
+            Las características importantes de MariaDB son:
+         </p>
+         <p>
+            Todo MariaDB está bajo GPL, LGPL o BSD. Incluye una amplia selección de motores de almacenamiento, incluidos motores de almacenamiento de alto rendimiento, para trabajar con otras fuentes de datos RDBMS. Utiliza un lenguaje de consulta estándar y popular "SQL". Se ejecuta en varios sistemas operativos y admite una amplia variedad de lenguajes de programación. Ofrece soporte para PHP, uno de los lenguajes de desarrollo web más populares. Ofrece tecnología de "Galera Cluster".
+         </p>
+         <p>
+            Vemos una definición  completa de Galera Cluster  en https://www.ionos.es/digitalguide/hosting/cuestiones-tecnicas/galera-cluster-para-mariadb/
+         </p>
+         <blockquote class="w3-panel w3-light-grey w3-tiny">
+            <p>
+               ¿Qué es Galera Cluster?
+            </p>
+            <p>
+               Galera Cluster es un paquete de software para sistemas operativos Linux que permite la creación y gestión de clústeres de MySQL, XtraDB y MariaDB. Esta aplicación de clúster se basa en el motor de almacenamiento InnoDB o su derivado XtraDB. Experimentalmente es compatible con el motor MyISAM, que durante mucho tiempo se utilizó también en MySQL y MariaDB como predecesor de InnoDB. Galera Cluster aplica el principio de la replicación síncrona al almacenamiento de datos en los diversos nodos independientes del clúster. Todos los procesos de copia y modificación de los datos almacenados tienen lugar simultáneamente en todas las unidades de almacenamiento primarias y secundarias, de forma que los datos presentes en todos los nodos están siempre actualizados y no difieren entre ellos.
+            </p>
+            <p>
+               La expresión mínima de un Galera Cluster consiste en tres nodos (los desarrolladores recomiendan en general usar un número impar). Si uno de los nodos falla durante la transacción de datos, por ejemplo, debido a problemas de la red o del sistema, los otros dos nodos siguen formando la mayoría necesaria para realizar la transacción correctamente.
+            </p>
+         </blockquote>
+         <p>
+            Continuamos hablando de las características de MariaDB.
+         </p>
+         <p>
+            MariaDB también ofrece muchas operaciones y comandos que no están disponibles en MySQL, eliminando y reemplazando características que impactan negativamente en el rendimiento. No digo que MariaDB es mejor que MySQL o viceversa, ya que Oracle trabaja fuertemente  en el desarrollo de actualizaciones apara su sistema MySQL, sin embargo yo  utilizo MariaDB pues viene incorporado en mis paquetes de desarrollo habituales.
+         </p>
+         <p>
+            Ya tenemos el conocimiento para  comenzar a trabajar con consultas SQL nivel básico e incrementando nuestro conocimiento para elaborar bases de datos avanzadas. Recuerda que puedo hacer referencia a consultas SQL o MySQL sin embargo las estaremos ejecutando sobre MariaDB.
+            <p>
+            </p>
+            Por último le recuerdo que trabajamos  con PHP y HTML en las entradas relacionadas con bases de datos. Por lo que será buena que antes de comenzar  con lecturas posteriores en mi blog aprendas sobre PHP y HTML, al menos para las entradas relacionadas bases de datos. También estaré publicando entradas para que aprendas a hacer aplicaciones completas usando PHP sin embargo al día de hoy solo rango un repositorio en GitHub  con todo lo relacionado con el  lenguaje PHP y no este organizado. Por lo que  puedes visitar la página oficina  de PHP aquí https://www.php.net/manual/en/index.php
+         </p>
+      </div>
+   </body>
+</html>

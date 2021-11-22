@@ -1,0 +1,57 @@
+Resumen: este tutorial te ayuda a responder la pregunta: ¿qué es MySQL? Y darle las razones por las que MySQL es la base de datos de código abierto más popular del mundo.
+
+Para comprender MySQL, primero debe comprender la base de datos y SQL. Si ya conoce la base de datos y SQL, puede saltar a la sección ¿Qué es MySQL?
+
+Introducción a la base de datos
+Tratas con datos todos los días ...
+
+Cuando quiera escuchar sus canciones favoritas, abra su lista de reproducción desde su teléfono inteligente. En este caso, la lista de reproducción es una base de datos.
+
+Cuando toma una foto y la carga en su cuenta en una red social como Facebook, su galería de fotos es una base de datos.
+
+Cuando navega por un sitio web de comercio electrónico para comprar zapatos, ropa, etc., utiliza la base de datos del carrito de compras.
+
+Las bases de datos están en todas partes. Entonces, ¿qué es una base de datos? Por definición, una base de datos es simplemente una colección estructurada de datos.
+
+Los datos que se relacionan entre sí por naturaleza, por ejemplo, un producto pertenecía a una categoría de producto y estaba asociado con múltiples etiquetas. Por lo tanto, usamos el término base de datos relacional.
+
+En la base de datos relacional, modelamos datos como productos, categorías, etiquetas, etc., utilizando tablas. Una tabla contiene columnas y filas. Es como una hoja de cálculo.
+
+Una tabla puede relacionarse con otra tabla usando una relación, por ejemplo, relaciones uno a uno y uno a muchos.
+
+Debido a que manejamos una cantidad significativa de datos, necesitamos una forma de definir las bases de datos, tablas, etc., y procesar los datos de manera más eficiente. Además, queremos convertir los datos en información.
+
+Y aquí es donde entra en juego SQL.
+
+SQL: el lenguaje de la base de datos relacional
+SQL significa lenguaje de consulta estructurado.
+
+SQL es el lenguaje estandarizado que se usa para acceder a la base de datos.
+
+ANSI / SQL define el estándar SQL. La versión actual de SQL es SQL: 2016. Siempre que nos referimos al estándar SQL, nos referimos a la versión actual de SQL.
+
+SQL contiene tres partes:
+
+El lenguaje de definición de datos incluye declaraciones que le ayudan a definir la base de datos y sus objetos, por ejemplo, tablas, vistas, disparadores, procedimientos almacenados, etc.
+El lenguaje de manipulación de datos contiene declaraciones que le permiten actualizar y consultar datos.
+El lenguaje de control de datos le permite otorgar permisos a un usuario para acceder a datos específicos en la base de datos.
+Ahora, comprende la base de datos y SQL, y es hora de responder a la siguiente pregunta ...
+
+¿Qué es MySQL?
+MySQL? ¿Qué?
+
+Mi es el nombre de la hija del cofundador de MySQL, Monty Widenius.
+
+El nombre de MySQL es la combinación de My y SQL, MySQL.
+
+MySQL es un sistema de administración de bases de datos que le permite administrar bases de datos relacionales. Es un software de código abierto respaldado por Oracle. Significa que puede usar MySQL sin pagar un centavo. Además, si lo desea, puede cambiar su código fuente para adaptarlo a sus necesidades.
+
+Aunque MySQL es un software de código abierto, puede comprar una versión de licencia comercial de Oracle para obtener servicios de soporte premium.
+
+MySQL es bastante fácil de dominar en comparación con otro software de base de datos como Oracle Database o Microsoft SQL Server.
+
+MySQL puede ejecutarse en varias plataformas UNIX, Linux, Windows, etc. Puede instalarlo en un servidor o incluso en un escritorio. Además, MySQL es confiable, escalable y rápido.
+
+La forma oficial de pronunciar MySQL es My Ess Que Ell, no My Sequel. Sin embargo, puedes pronunciarlo como quieras, ¿a quién le importa?
+
+Si desarrolla sitios web o aplicaciones web, MySQL es una buena opción. MySQL es un componente esencial de la pila LAMP, que incluye Linux, Apache, MySQL y PHP.

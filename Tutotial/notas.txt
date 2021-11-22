@@ -1,0 +1,19 @@
+https://www.techonthenet.com/mariadb/index.php
+
+https://www.w3spoint.com/mariadb-tutorial
+
+https://hackr.io/tutorials/learn-mariadb
+
+https://www.tutorialspoint.com/mariadb/mariadb_introduction.htm
+
+https://www.mariadbtutorial.com/
+
+https://linuxhint.com/mariadb-tutorial/
+
+Pendiente para estudiar 
+
+https://www.geeksforgeeks.org/dynamically-generating-a-qr-code-using-php/
+
+
+Próxima entrada se trabaja en el fichero
+Curso-de-MySql/Tutotial/tutorialspoint/00003_coneccion/notas.txt

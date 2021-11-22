@@ -1,0 +1,8 @@
+En esta sección se desglosa la coherencia del trabajo de los de mas directorios.
+
+Seguimiento 
+Curso-de-MySql/Tutotial/00001/notas.txt
+
+Es hora de ejemplos 
+  vamos a la seccion del deiractorio docs/
+ 

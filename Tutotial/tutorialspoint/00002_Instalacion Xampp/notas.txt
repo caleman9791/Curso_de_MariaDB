@@ -1,0 +1,23 @@
+https://mariadb.com/kb/en/beginner-mariadb-articles/
+
+https://downloads.mariadb.org/
+
+
+
+Bienvenido a una nueva entrada de blog donde aprenderás a instalar XAMPP lo cual trae incluido MariaDB. Puede que en la internet encuentres una gran cantidad de herramientas para trabajar con MariaDB. Sin embargo en mi blog intentaré usar las herramientas más sencillas e intuitivas para que logres crear aplicaciones web potentes. Por aquello de que serán comentarios negativos a cerca de las herramientas que usamos aquí. Permítame mencionar un refrán que se dice mucho en mi país "No es la flecha es el indio"
+
+¡Comencemos! Para instalar XAMPP en Linux solo debes descargar el instalador e ir ar directorio donde los descargaste y abrir una terminal en ese mismo directorio. Entonces ejecutar los siguientes comandos 
+
+
+
+Primero cambia los permisos al instalador
+
+chmod 755 xampp-linux-*-installer.run
+
+Segundo ejecuta el instalador
+
+sudo ./xampp-linux-*-installer.run  
+
+
+Luego de esto aparecerá una ventana de diálogo para la instalación eliges las opciones  por defecto y listo ya tienes MariaDB. Pero no solo tendrás MariaDB  si noque  también tendrás la versión de PHP y Apache que seleccionaste en el paquete de instalación en conjunto con MariaDB. ¿Por qué instalar este paquete? Porque nos ahora una gran cantidad de tiempo y no queremos retrasos, lo que queremos es, hacer aplicaciones usando bases de datos, con interfaz de usuario y comenzar a dar servicios a empresas. 
+

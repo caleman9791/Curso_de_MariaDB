@@ -1,0 +1,84 @@
+    Colapsar todosDeshacer enlace en el panel principal
+
+    Nueva
+    Expandir/Colapsar
+    Opciones de la base de datos
+    app_banco
+    Expandir/Colapsar
+    Opciones de la base de datos
+    ejemplo
+    Expandir/Colapsar
+    Opciones de la base de datos
+    information_schema
+    Expandir/Colapsar
+    Opciones de la base de datos
+    mysql
+    Expandir/Colapsar
+    Opciones de la base de datos
+    nueva_base_de_datos_2
+    Expandir/Colapsar
+    Opciones de la base de datos
+    performance_schema
+    Expandir/Colapsar
+    Opciones de la base de datos
+    phpmyadmin
+    Expandir/Colapsar
+    Opciones de la base de datos
+    test
+    Expandir/Colapsar
+    Opciones de la base de datos
+    wordpress
+
+
+    Array(9) [ {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…} ]
+​
+0: Object { Database: "app_banco" }
+​​
+Database: "app_banco"
+​​
+<prototype>: Object { … }
+​
+1: Object { Database: "ejemplo" }
+​​
+Database: "ejemplo"
+​​
+<prototype>: Object { … }
+​
+2: Object { Database: "information_schema" }
+​​
+Database: "information_schema"
+​​
+<prototype>: Object { … }
+​
+3: Object { Database: "mysql" }
+​​
+Database: "mysql"
+​​
+<prototype>: Object { … }
+​
+4: Object { Database: "nueva_base_de_datos_2" }
+​​
+Database: "nueva_base_de_datos_2"
+​​
+<prototype>: Object { … }
+​
+5: Object { Database: "performance_schema" }
+​​
+Database: "performance_schema"
+​​
+<prototype>: Object { … }
+​
+6: Object { Database: "phpmyadmin" }
+​​
+Database: "phpmyadmin"
+​​
+<prototype>: Object { … }
+​
+7: Object { Database: "test" }
+​
+8: Object { Database: "wordpress" }
+​
+length: 9
+​
+<prototype>: Array []
+fetch.js:12:12

@@ -1,0 +1,194 @@
+En esta entrada tocaremos el tema de conexiones a la base de datos MariaDB. Recuerda que todas las consultas MySQL son compatibles con MariaDB. 
+
+Puede que existan algunos cambios mínimos, sin embargo vemos esta comparación de uso en https://lamp.ciscoar.com/mariadb-and-mysql-compatibility/ donde nos dice: 
+
+Tan pronto como comience a trabajar con MariaDB, notará su compatibilidad con MySQL, de hecho, cada vez que inicie sesión en la consola MariaDB usando el comando CLI "MySQL", debe darse cuenta de que está usando exactamente el mismo comando CLI que se usaría en MySQL.
+
+
+En la entrada anterior a esta hablé sobre la ejecución de bases de datos usando la consola de comandos "terminal". No te preocupes aquí no se usará la consola, pero usaremos PHP para poder  desplegar en el navegador  los datos de las consultas SQL que realizaremos a la base de datos MariaDB. 
+
+
+¡Comencemos! Actualmente PHP tiene dos clases que trabajan la conexión a base de datos referentes a MariaDB y MySQL. Observamos en el siguiente enlace, que están divididas como capas extensiones de capa de abstracción y extensiones nativas de los desarrolladores.   
+
+
+Primero te muestro una clase creada por mí para realizar instancias de la conexión de base de datos. Cada programador puede ver las cosas de distintas formas, sin embargo debemos estar al día con comentarios de programadores con años de experiencia y aprender  de ellos. Así que he chacho esta clase de PHP, lo cual podrás usar en tus proyectos.  
+
+
+
+<?php
+
+class ConnDB
+{
+
+   private $servername;
+   private $username;
+   private $password;
+   private $dbname;
+   private $conn;
+
+   public function __construct($cadena)
+   {
+
+      $this->servername = "localhost";
+      $this->username   = "root";
+      $this->password   = "";
+      $this->dbname     = $cadena;
+
+      try {
+         $this->conn = new PDO(
+            "mysql:host=$this->servername;dbname=$this->dbname",
+            $this->username,
+            $this->password);
+
+         $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+         return $this->conn;
+
+      } catch (PDOException $e) {
+
+         return false;
+      }
+   }
+
+}
+
+$conexion = new ConnDB("app_banco");
+
+var_dump($conexion);
+
+Ya que muestro un ejemplo de una clase  para conexión  que puedes usar en tus proyectos, de hecho es así la puedes usar, sin embargo debes considerar que esto sería para un proyecto donde solo tú y  unos pocos tendrán el control del desarrollo y, para hacer trabajos colaborativos se recomienda que utilices métodos de instancia ya creados por grandes compañías que invierten mucho dinero y esfuerzo para que estos marcos sean uniformes, y que los usuarios de estos, puedan trabajar de manera colaborativa y que su coherencia sea compartida. Recuerda que escribir instrucciones para programas  puede ser confuso cuando no se sabe realmente resultado esperado de este gran programa  y más aún  cuando se escribe un código fuente que servirá para diferentes objetivos. Entonces estas clases están pensadas para que sean utilidades en diferentes escenarios. 
+
+Aquí te dejo algunos enlaces donde exponen ficheros de código fuente de CakePHP y se define el funcionamiento del mismo, esto para conocedores de PHP a fondo. Estos están pensados para consultas, conexión, consultas múltiples, tipos de datos enviados y recibidos, control de excepciones  y muchos otros objetivos.
+
+
+https://api.cakephp.org/3.6/source-class-Cake.Datasource.ConnectionManager.html#20-207
+
+https://api.cakephp.org/3.3/source-class-Cake.Database.Driver.PDODriverTrait.html#27-32
+
+https://api.cakephp.org/3.0/source-class-Cake.Database.Query.html#25-1765
+
+https://api.cakephp.org/3.6/source-class-Cake.Database.Statement.PDOStatement.html#20-134
+
+
+
+Observa este comentario en un blog de discusión para programadores de todo el mundo aquí https://stackoverflow.com/a/21832927  lo cual se  hace referencia al marco de trabajo Symfony donde nos dice:
+
+El uso de singletons en PHP se considera una mala práctica. Desde mi experiencia, el problema más problemático con ellos son las pruebas unitarias. Es difícil asegurarse de que dos pruebas sean independientes cuando se prueban singletons.
+
+Delegaría la responsabilidad de la restricción 'solo debería existir una instancia' al código que crea el objeto Db.
+
+También para mí, parece que hay un malentendido en cómo funcionan los Singletons en PHP en contraste con otros lenguajes: si tiene 10,000 solicitudes concurrentes, por ejemplo, entonces cada solicitud se ejecuta en un proceso o hilo de PHP separado, lo que significa que todos tendrán los suyos propios. instancia del 'singleton', no se puede compartir este objeto para más de una sola solicitud (cuando se ejecuta PHP en escenarios de backend web comunes)
+
+No hay 'agrupación de conexiones' en PHP, pero puede usar conexiones persistentes mysqli para mysql. Se puede lograr pasando la p: delante del nombre de host al crear mysqli. Esto podría ayudar aquí, pero manipúlelo con cuidado (es decir, lea la documentación primero)
+
+
+Por otro lado veamos que en la documentación oficial en https://www.php.net/manual/es/mysqlinfo.api.choosing.php nos dice:
+
+PHP ofrece tres API diferentes para conectarse a MySQL. Abajo se muestran las API proporcionadas por las extensiones mysql, mysqli, y PDO. Cada trozo de código crea una conexión al servidor de MySQL que se está ejecutando en "ejemplo.com" con el nombre de usuario "usuario" y la contraseña "contraseña". También se ejecuta una consulta para saludar al usuario.
+
+======================================================
+
+<?php
+// mysqli
+$mysqli = new mysqli("ejemplo.com", "usuario", "contraseña", "basedatos");
+$resultado = $mysqli->query("SELECT '¡Hola, querido usuario de MySQL!' AS _message FROM DUAL");
+$fila = $resultado->fetch_assoc();
+echo htmlentities($fila['_message']);
+
+// PDO
+$pdo = new PDO('mysql:host=ejemplo.com;dbname=basedatos', 'usuario', 'contraseña');
+$sentencia = $pdo->query("SELECT '¡Hola, querido usuario de MySQL!' AS _message FROM DUAL");
+$fila = $sentencia->fetch(PDO::FETCH_ASSOC);
+echo htmlentities($fila['_message']);
+
+// mysql
+$c = mysql_connect("ejemplo.com", "usuario", "contraseña");
+mysql_select_db("basedatos");
+$resultado = mysql_query("SELECT '¡Hola, querido usuario de MySQL!' AS _message FROM DUAL");
+$fila = mysql_fetch_assoc($resultado);
+echo htmlentities($fila['_message']);
+?>
+
+
+======================================================
+
+
+
+Se recomienda usar las extensiones mysqli o PDO_MySQL. No se recomienda usar la extensión mysql antigua para nuevos desarrollos, ya que ha sido declarada obsoleta en PHP 5.5.0 y eliminada en PHP 7. Se proporciona una matriz detallada de comparación de características más abajo. El rendimiento global de las tres extensiones se considera que sea aproximadamente el mismo. Aunque el rendimiento de la extensión aporta solamente una fracción del total del tiempo de ejecución de una consulta web de PHP. A menudo, el impacto es tan bajo como 0.1%.
+
+Ya observamos unos ejemplos, sobre conexiones y nos percatamos que hay una que ya está en desuso.
+
+Ahora mostraré unos fragmentos actualizados, lo cual podemos usar en nuestros proyectos. Adicionalmente  veremos como se puede usar MySQLi orientado a objetos y orientado a procedimientos. Pero no sin antes citar la documentación oficial de PHP donde nos dice.   
+
+Advertencia
+Esta extensión fue declarada obsoleta en PHP 5.5.0 y eliminada en PHP 7.0.0. En su lugar debería utilizarse las extensiones MySQLi o PDO_MySQL. Véase también la guía MySQL: elegir una API. Las alternativas a esta función son:
+mysqli_connect()
+PDO::__construc
+
+URL para ver aquí https://www.php.net/manual/en/function.mysql-connect.php
+
+
+
+
+
+
+
+<?php
+$servername = "localhost";
+$username = "username";
+$password = "password";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
+?>
+
+
+
+<?php
+$servername = "localhost";
+$username = "username";
+$password = "password";
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password);
+
+// Check connection
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
+?>
+
+
+
+<?php
+$servername = "localhost";
+$username = "username";
+$password = "password";
+
+try {
+  $conn = new PDO("mysql:host=$servername;dbname=myDB", $username, $password);
+  // set the PDO error mode to exception
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  echo "Connected successfully";
+} catch(PDOException $e) {
+  echo "Connection failed: " . $e->getMessage();
+}
+?>
+
+
+
+Referencias 
+
+https://portswigger.net/web-security/cross-site-scripting
+
+https://www.php.net/manual/en/set.mysqlinfo.php
+
+https://www.php.net/manual/es/ref.pdo-mysql.php
+
+https://www.php.net/manual/en/refs.database.php
