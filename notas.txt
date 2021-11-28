@@ -34,6 +34,7 @@ MariaDB - Null Values
 MariaDB - Regular Expression
 MariaDB - Transactions
 MariaDB - Alter Command
+
 Indexes & Statistics Tables
 MariaDB - Temporary Tables
 MariaDB - Table Cloning

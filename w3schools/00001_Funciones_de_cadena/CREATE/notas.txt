@@ -1,20 +1,44 @@
-CREATE DATABASE 	Create a database.
-CREATE EVENT 	Create and schedule a new event.
-CREATE FUNCTION 	Creates a stored function.
-CREATE FUNCTION UDF 	Create a user-defined function.
-CREATE INDEX 	Create an index on one or more columns.
-CREATE LOGFILE GROUP 	The CREATE LOGFILE GROUP statement is not supported by MariaDB. It was orig...
-CREATE PACKAGE 	Create a stored package, in Oracle-mode.
-CREATE PACKAGE BODY 	Creates the package body for a stored package.
-CREATE PROCEDURE 	Creates a stored procedure.
-CREATE ROLE 	Add new roles.
-CREATE SEQUENCE 	Creates a sequence that generates new values when called with NEXT VALUE FOR.
-CREATE SERVER 	Define a server.
-CREATE TABLE 	Creates a new table.
-CREATE TABLESPACE 	CREATE TABLESPACE is not available in MariaDB.
-CREATE TRIGGER 	Create a new trigger.
-CREATE USER 	Create new MariaDB accounts.
-CREATE VIEW 	Create or replace a view.
-Silent Column Changes 	MariaDB silently changes column specifications in certain situations.
-Generated (Virtual and Persistent/Stored) Columns 	Generated (virtual and persistent/stored) columns.
-Invisible Columns 	Invisible columns are hidden in certain contexts. 
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+CREATE DATABASE 																						Crear una base de datos. *
+------------------------------------------------------------------------------------------------------------------------------------------------------
+CREATE EVENT 																								Crea y programar un nuevo evento.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+CREATE FUNCTION 																						Crea una función almacenada.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+CREATE FUNCTION UDF 																				Crear una función definida por el usuario.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+CREATE INDEX 																								Cree un índice en una o más columnas.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+CREATE LOGFILE GROUP 																				La Declaración Crear grupo de logfile no es compatible con Mariadb. Fue original ...
+------------------------------------------------------------------------------------------------------------------------------------------------------
+CREATE PACKAGE 																							Cree un paquete almacenado, en modo Oracle.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+CREATE PACKAGE BODY 																				Crea el cuerpo del paquete para un paquete almacenado.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+CREATE PROCEDURE 																						Crea un procedimiento almacenado.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+CREATE ROLE 																								Añadir nuevos roles.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+CREATE SEQUENCE 																						Crea una secuencia que genera nuevos valores cuando se llama con [NEXT VALUE FOR]
+------------------------------------------------------------------------------------------------------------------------------------------------------
+CREATE SERVER 																							Definir un servidor.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+CREATE TABLE 																								Crea una nueva tabla.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+CREATE TABLESPACE 																					Crear espacio de tabla no está disponible en Mariadb.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+CREATE TRIGGER 																							Crea un nuevo disparador.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+CREATE USER 																								Crea nuevas cuentas de mariadb.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+CREATE VIEW 																								Crea o reemplaza una vista.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Silent Column Changes 																			Mariadb cambia silenciosamente las especificaciones de la columna en ciertas situaciones.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Generated (Virtual and Persistent/Stored) Columns 					Columnas generadas (virtuales y persistentes / almacenadas).
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Invisible Columns 																					Las columnas invisibles están ocultas en ciertos contextos.
+------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -65,6 +65,7 @@ CREATE TABLE table_name (
     edad int(2)
    
 );
+
 INSERT INTO person (id, nombre,edad) 
 VALUES 
 (1, "Nombre 1", 20),

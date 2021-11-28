@@ -148,3 +148,19 @@ SELECT * FROM c3;
 |   20 |
 |   30 |
 +------+
+
+
+-- Change the delimiter
+DELIMITER //
+-- Create the stored procedure
+CREATE OR REPLACE PROCEDURE FirstProc()
+BEGIN
+SELECT 1 AS OurResult;
+END
+//
+-- Change back the delimiter
+DELIMITER ;
+-- Call the stored procedure
+CALL FirstProc();
+-- remove the stored procedure
+DROP PROCEDURE FirstProc;
