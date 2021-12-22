@@ -1,12 +1,12 @@
 
 
-Formatos El número dado para la pantalla como una cadena, agregando separadores
-a la posición apropiada y redondeando los resultados a la posición decimal dada. 
-Por ejemplo, formatearía 15233.345 a 15,233.35.
+-- Formatos El número dado para la pantalla como una cadena, agregando separadores
+-- a la posición apropiada y redondeando los resultados a la posición decimal dada. 
+-- Por ejemplo, formatearía 15233.345 a 15,233.35.
 
-Si la posición decimal dada es 0, se redondea para devolver el punto decimal o
-una parte fraccionada. Opcionalmente, puede especificar un valor de configuración
-regional para formatear números al patrón apropiado para la región dada.
+-- Si la posición decimal dada es 0, se redondea para devolver el punto decimal o
+-- una parte fraccionada. Opcionalmente, puede especificar un valor de configuración
+-- regional para formatear números al patrón apropiado para la región dada.
 
 
 SELECT FORMAT(1234567890.09876543210, 4) AS 'Format';

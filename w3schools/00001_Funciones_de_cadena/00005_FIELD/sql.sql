@@ -1,20 +1,16 @@
 
 
-Devuelve la posición de índice de la cadena o número que coincide con el patrón dado. 
-Devuelve 0 en el caso de que ninguno de los argumentos coincide con el patrón.
-Eleva un error 1582 si no se le da al menos dos argumentos.
+-- Devuelve la posición de índice de la cadena o número que coincide con el patrón dado. 
+-- Devuelve 0 en el caso de que ninguno de los argumentos coincide con el patrón. 
+-- Eleva un error 1582 si no se le da al menos dos argumentos.
 
-Cuando todos los argumentos dados a la función de FIELD() son cadenas, las mismas son 
-insensibles a las mayúsculas y a las minúsculas "case-sensitive". Cuando todos los argumentos 
-son números, son tratados como números. De lo contrario, son tratados como dobles.
+-- Cuando todos los argumentos dados a la función de campo () son cadenas, se tratan como insensibles a la caja. 
+-- Cuando todos los argumentos son números, son tratados como números. De lo contrario, son tratados como dobles.
 
-Si el patrón dado se produce más de una vez, la función de FIELD() solo devuelve el índice 
-de la primera instancia. Si el patrón dado es nulo, la función devuelve 0, ya que un patrón 
-nulo siempre no coincide.
+-- Si el patrón dado se produce más de una vez, la función de campo () solo devuelve el índice de la primera instancia.
+-- Si el patrón dado es nulo, la función devuelve 0, ya que un patrón nulo siempre no coincide.
 
-Esta función es complementaria a la función ELT().
-
-Nota: el primer parámetro es el que define el patrón dado.
+-- Esta función es complementaria a la función ELT ().
 
 
 SELECT FIELD('ej', 'Hej', 'ej', 'Heja', 'hej', 'foo') 
