@@ -1,0 +1,5 @@
+https://dev.mysql.com/doc/index-other.html
+////////////////////////////////////////////
+https://www.w3resource.com/mysql/mysql-tutorials.php
+https://www.mariadbtutorial.com/
+https://www.tutorialspoint.com/mariadb/index.htm

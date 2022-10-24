@@ -1,5 +1,8 @@
 sudo /opt/lampp/lampp start
 
+Nota IMPORTANTE
+https://www.php.net/manual/en/security.database.php
+Nota IMPORTANTE
 En el directorio documentación mas detalles 
 ////////////////////////////////////////////
 DB pruebas

@@ -1,34 +1,36 @@
  <?php
 // Variables para la conexión
 $servername = "localhost";
-$username   = "root";
-$password   = "";
+$username = "root";
+$password = "";
 
 try {
-   // Instancia PDO para trabajar con ella
-   $conn = new PDO("mysql:host=$servername;", $username, $password);
+	// Instancia PDO para trabajar con ella
+	$conn = new PDO("mysql:host=$servername;", $username, $password);
 
 // Configuración de errores
-   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 // Nombre que daremos a la base de datos
-   $dbname = "nueva_base_de_datos_2";
+	$dbname = "nueva_base_de_datos_2";
 
 // Consulta que s eencarga de crear la base de datos
-   $sql = "CREATE DATABASE IF NOT EXISTS $dbname";
+	$sql = "CREATE DATABASE IF NOT EXISTS $dbname";
 
 // condicional  para determinar si estaba creada o no
-   if ($conn->exec($sql)) {
+	if ($conn->exec($sql)) {
 
-      echo "Base de datos creada con éxito<br>";
+		echo "Base de datos creada con éxito<br>";
 
-   } else {
+	} else {
 
-      echo "Base de datos ya existe<br>";
-   }
+		echo "Base de datos ya existe<br>";
+	}
 
 // Manejo de exepciones
 } catch (PDOException $e) {
 
-   echo "La conexión falló: " . $e->getMessage();
+	echo "La conexión falló: " . $e->getMessage();
 }
+
+// localhost/Proyectos/codefuncode/Curso-de-MariaDB/tutorialspoint/00004_MariaDB_Crear_base_de_datos/php.php

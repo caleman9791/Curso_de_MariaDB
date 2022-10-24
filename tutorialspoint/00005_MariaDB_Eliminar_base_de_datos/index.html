@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>
+      Document
+    </title>
+  </head>
+  <!--  Notas : 
+      12 bases de datos diferentes y en la pagina oficial de PHP presenta 11
+   -->
+  <body>
+    <div class="">
+      <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"/>
+      <div class="w3-container">
+        <p>
+          La creación o eliminación de bases de datos en MariaDB requiere privilegios, por lo general, solo dados a usuarios o administradores raíz. En estas cuentas, tiene dos opciones para eliminar una base de datos: el binario mysqladmin y un script PHP.
+        </p>
+        <p>
+          Tenga en cuenta que las bases de datos eliminadas son irrecuperables, por lo que ejerce cuidado al realizar esta operación. Además, los scripts PHP utilizados para la eliminación no le solicitan una confirmación antes de la eliminación.
+        </p>
+        <p>
+          La creación o eliminación de bases de datos en MariaDB requiere privilegios, por lo general, solo dados a usuarios o administradores.
+        </p>
+        <p>
+          Tenga en cuenta que las bases de datos eliminadas son irrecuperables, por lo que ejerce cuidado al realizar esta operación. Además, los scripts PHP utilizados para la eliminación no le solicitan una confirmación antes de la eliminación.
+        </p>
+        <p>
+          PHP 5 y posterior puede funcionar con una base de datos MySQL usando:
+        </p>
+        <ul>
+          <li>
+            Extensión mysqli (la "i" significa mejorar)
+          </li>
+          <li>
+            PDO (objetos de datos PHP)
+          </li>
+        </ul>
+        <p>
+          Las versiones anteriores de PHP utilizaron la extensión MySQL. Sin embargo, esta extensión se vio en desuso en 2012.
+        </p>
+        <p>
+          ¿Debo usar mysqli o pdo?
+        </p>
+        <p>
+          Si necesita una respuesta breve, sería "lo que quieras".
+        </p>
+        <p>
+          Tanto Mysqli como PDO tienen sus ventajas:
+        </p>
+        <p>
+          SEgun la documentalista de PHP,  PDO funcionará en 12 sistemas de bases de datos diferentes, mientras que MySQLI solo funcionará con bases de datos MySQL.
+          <br/>
+          https://www.php.net/manual/en/pdo.drivers.php
+        </p>
+        <p>
+          Entonces, si tiene que cambiar su proyecto para usar otra base de datos, PDO facilita el proceso. Solo tiene que cambiar la cadena de conexión y algunas consultas. Con MySQLI, deberá reescribir todo el código, consultas incluidas.
+        </p>
+        <p>
+          Ambos están orientados a objetos, pero MySQLI también ofrece una API de procedimiento.
+        </p>
+        <p>
+          Ambos apoyan declaraciones preparadas. Las declaraciones preparadas protegen de la inyección SQL y son muy importantes para la seguridad de las aplicaciones web.
+        </p>
+        <p>
+          Sintaxis:
+          <br/>
+          Revise la siguiente sintaxis del script de base de datos.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
